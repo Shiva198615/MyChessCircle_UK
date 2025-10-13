@@ -19,12 +19,6 @@ const formatDateTime = (date) => {
   }
 };
 
-const generateUpiTxnId = () => {
-  const base = Date.now().toString().slice(-10);
-  const rand = Math.floor(Math.random() * 90 + 10).toString();
-  return base + rand; // 12 digits
-};
-
 const normalizeSuccess = (raw) => {
   if (!raw) return null;
   // If already normalized
