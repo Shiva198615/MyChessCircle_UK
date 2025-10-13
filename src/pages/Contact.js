@@ -81,7 +81,7 @@ const Contact = () => {
                 <div className="method-icon"><FaEnvelope /></div>
                 <div className="method-details">
                   <h3>Email</h3>
-                  <p>support@mychesscircle.uk</p>
+                  <p>support@mychesscircle.com</p>
                 </div>
               </div>
 
@@ -108,10 +108,10 @@ const Contact = () => {
             <div className="social-links">
               <h3>Follow Us On</h3>
               <div className="social-icons">
-                <a href="https://www.facebook.com/share/1C4gpZS1AQ/" target="_blank" rel="noreferrer"><FaFacebook /></a>
-                <a href="https://x.com/check_mate32" target="_blank" rel="noreferrer"><FaTwitter /></a>
-                <a href="https://www.instagram.com/mychesscircle?igsh=dWZqbmdzcmsyaHdq" target="_blank" rel="noreferrer"><FaInstagram /></a>
-                <a href="https://www.youtube.com/channel/UClwO6yq8I6DQFfrTUkA2_hA" target="_blank" rel="noreferrer"><FaYoutube /></a>
+                <a href="https://www.facebook.com/share/1C4gpZS1AQ/" target="_blank"><FaFacebook /></a>
+                <a href="https://x.com/check_mate32" target="_blank"><FaTwitter /></a>
+                <a href="https://www.instagram.com/mychesscircle?igsh=dWZqbmdzcmsyaHdq" target="_blank"><FaInstagram /></a>
+                <a href="https://www.youtube.com/channel/UClwO6yq8I6DQFfrTUkA2_hA" target="_blank"><FaYoutube /></a>
               </div>
             </div>
           </div>

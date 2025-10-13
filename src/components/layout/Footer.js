@@ -37,10 +37,10 @@ const Footer = () => {
             
 
             <div className="social-icons">
-              <a href="https://www.facebook.com/share/1C4gpZS1AQ/" target="_blank" rel="noreferrer"><FaFacebook /></a>
-              <a href="https://x.com/check_mate32" target="_blank" rel="noreferrer"><FaTwitter /></a>
-              <a href="https://www.instagram.com/mychesscircle?igsh=dWZqbmdzcmsyaHdq" target="_blank" rel="noreferrer"><FaInstagram /></a>
-              <a href="https://www.youtube.com/channel/UClwO6yq8I6DQFfrTUkA2_hA" target="_blank" rel="noreferrer"><FaYoutube /></a>
+              <a href="https://www.facebook.com/share/1C4gpZS1AQ/" target="_blank"><FaFacebook /></a>
+              <a href="https://x.com/check_mate32" target="_blank"><FaTwitter /></a>
+              <a href="https://www.instagram.com/mychesscircle?igsh=dWZqbmdzcmsyaHdq" target="_blank"><FaInstagram /></a>
+              <a href="https://www.youtube.com/channel/UClwO6yq8I6DQFfrTUkA2_hA" target="_blank"><FaYoutube /></a>
             </div>
           </div>
 
@@ -119,8 +119,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="allrights">&copy; {new Date().getFullYear()} Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle_UK”</span>, All rights reserved.</p>
-          <p className="disclaimer">This platform is for entertainment purposes only. Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle_UK”</span>, 
+          <p className="allrights">&copy; {new Date().getFullYear()} Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle”</span>, All rights reserved.</p>
+          <p className="disclaimer">This platform is for entertainment purposes only. Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle”</span>, 
             operates in compliance with all applicable laws and regulations.</p>
           <div className="scroll-text">
             <p>If you reside in a state where online gaming is prohibited (e.g. ASSAM, TELANGANA, ODISHA, MEGHALAYA, NAGALAND, SIKKIM AND ANDHRA PRADESH), you are not permitted to register or 
