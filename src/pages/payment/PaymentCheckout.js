@@ -84,13 +84,13 @@ const PaymentCheckout = () => {
       const phoneRaw = urlParams.get('phone') || '';
       const maskedPhoneRaw = urlParams.get('masked_phone') || '';
 
-      const sessionId = decodeURIComponent(sessionIdRaw).replace(/\"/g, '').trim();
-      const orderId = decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim();
-      const amount = decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim();
-      const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/\"/g, '').replace(/[^\d]/g, '').trim(), 10);
-      const nameFromUrl = decodeURIComponent(nameRaw).replace(/\"/g, '').trim();
-      const phoneFromUrl = decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10);
-      const maskedFromUrl = decodeURIComponent(maskedPhoneRaw).replace(/\"/g, '').trim();
+      const sessionId = decodeURIComponent(sessionIdRaw).replace(/"/g, '').trim();
+      const orderId = decodeURIComponent(orderIdRaw).replace(/"/g, '').trim();
+      const amount = decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim();
+      const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
+      const nameFromUrl = decodeURIComponent(nameRaw).replace(/"/g, '').trim();
+      const phoneFromUrl = decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10);
+      const maskedFromUrl = decodeURIComponent(maskedPhoneRaw).replace(/"/g, '').trim();
 
       console.log('URL Parameters extracted:', { sessionId, orderId, amount });
 
@@ -223,12 +223,12 @@ const PaymentCheckout = () => {
           const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
           const nameRaw = urlParams.get('name') || '';
           const phoneRaw = urlParams.get('phone') || '';
-          const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/\"/g, '').replace(/[^\d]/g, '').trim(), 10);
+          const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
           setFormData({
-            name: decodeURIComponent(nameRaw).replace(/\"/g, '').trim(),
-            phoneNumber: decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10),
-            orderId: decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim(),
-            amount: decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim()
+            name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+            phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+            orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+            amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
           });
           if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
             setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
@@ -243,12 +243,12 @@ const PaymentCheckout = () => {
         const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
         const nameRaw = urlParams.get('name') || '';
         const phoneRaw = urlParams.get('phone') || '';
-        const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/\"/g, '').replace(/[^\d]/g, '').trim(), 10);
+        const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
         setFormData({
-          name: decodeURIComponent(nameRaw).replace(/\"/g, '').trim(),
-          phoneNumber: decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10),
-          orderId: decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim(),
-          amount: decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim()
+          name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+          phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+          orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+          amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
         });
         if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
           setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
@@ -263,12 +263,12 @@ const PaymentCheckout = () => {
       const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
       const nameRaw = urlParams.get('name') || '';
       const phoneRaw = urlParams.get('phone') || '';
-      const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/\"/g, '').replace(/[^\d]/g, '').trim(), 10);
+      const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
       setFormData({
-        name: decodeURIComponent(nameRaw).replace(/\"/g, '').trim(),
-        phoneNumber: decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10),
-        orderId: decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim(),
-        amount: decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim()
+        name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+        phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+        orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+        amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
       });
       if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
         setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
@@ -283,9 +283,7 @@ const PaymentCheckout = () => {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Generate IDs
-  const transactionId = 'TXN' + Date.now() + Math.random().toString(36).substr(2, 5).toUpperCase();
-  const referenceNumber = 'REF' + Date.now() + Math.random().toString(36).substr(2, 5).toUpperCase();
+  // Generate IDs (removed unused variables)
 
   // Validation rules
   const validations = {
@@ -379,7 +377,7 @@ const PaymentCheckout = () => {
     const sessionIdForSubmit = sessionData?.sessionId || (() => {
       const p = new URLSearchParams(location.search);
       const raw = p.get('session_id') || '';
-      return decodeURIComponent(raw).replace(/\"/g, '').trim();
+      return decodeURIComponent(raw).replace(/"/g, '').trim();
     })();
 
     if (!sessionIdForSubmit) {
@@ -438,7 +436,7 @@ const PaymentCheckout = () => {
       });
   };
 
-  const isFormValid = formData.orderId && (formData.amount !== '' && formData.amount != null) && Object.keys(errors).length === 0;
+  // Removed unused isFormValid variable
 
   if (DEBUG_LOG) {
     console.log('Component render state:', {
