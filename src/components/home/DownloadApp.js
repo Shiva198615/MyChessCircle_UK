@@ -19,7 +19,7 @@ const DownloadApp = () => {
       <div className="download-content">
         <div className="download-text">
         <h2>
-          Download the <span className="footer-logo-text">“MyChessCircle”</span> App
+          Download the <span className="footer-logo-text">“MyChessCircle_UK”</span> App
         </h2>
 
           <p>Play chess anytime, anywhere. Join E-sports Chess Championships, improve your skills, and win big prizes!</p>

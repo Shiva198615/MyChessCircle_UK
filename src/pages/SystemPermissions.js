@@ -8,7 +8,7 @@ const SystemPermissions = () => {
       </div>
       <div className="content-container">
         <div className="terms-content">
-            <h2>System Permissions for Online Gaming Application – Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span></h2>
+            <h2>System Permissions for Online Gaming Application – Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span></h2>
             <p>Our online gaming application requires certain system permissions to ensure seamless gameplay, security, and an enhanced user experience. Below is a list of required permissions and their purpose.</p>
             
             <h3>1. Mandatory Permissions</h3>

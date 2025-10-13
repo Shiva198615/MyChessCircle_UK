@@ -11,10 +11,10 @@ const Taxation = () => {
         <div className="terms-content">
           <p className="last-updated">Last Updated: 22-Aug-2025</p>
 
-          <h2>Tax Policy for Saara Creative Pvt Ltd - Under Brand Name  <span className="footer-logo-text">“MyChessCircle”</span> – India's Chess E-Sports Platform</h2>
+          <h2>Tax Policy for Saara Creative Pvt Ltd - Under Brand Name  <span className="footer-logo-text">“MyChessCircle_UK”</span> – India's Chess E-Sports Platform</h2>
 
           <h3>1. Introduction</h3>
-          <p>This Tax Policy outlines the taxation rules applicable to users of Saara Creative Pvt Ltd - Under Brand Name <span style={{ fontStyle: 'italic' }}>“MyChessCircle”</span>’s E-Sports Platform. As per the Income Tax Act, 1961, 
+          <p>This Tax Policy outlines the taxation rules applicable to users of Saara Creative Pvt Ltd - Under Brand Name <span style={{ fontStyle: 'italic' }}>“MyChessCircle_UK”</span>’s E-Sports Platform. As per the Income Tax Act, 1961, 
             particularly Section 115BB and Section 194B, all winnings earned through our platform are subject to taxation. Users must comply with tax regulations before withdrawing their winnings.</p>
 
           <h3>2. Tax Deduction at Source (TDS) on Rewards</h3>
@@ -80,7 +80,7 @@ const Taxation = () => {
 
           <h3>8. Disclaimer</h3>
           <p>•	This policy is based on the prevailing Indian tax laws.</p>
-          <p>•	Saara Creative Pvt Ltd - Under Brand Name  <span className="footer-logo-text">“MyChessCircle”</span> – India's Chess E-Sports Platform is not liable for any personal tax liabilities of users beyond TDS deductions.</p>
+          <p>•	Saara Creative Pvt Ltd - Under Brand Name  <span className="footer-logo-text">“MyChessCircle_UK”</span> – India's Chess E-Sports Platform is not liable for any personal tax liabilities of users beyond TDS deductions.</p>
 
         </div>
       </div>

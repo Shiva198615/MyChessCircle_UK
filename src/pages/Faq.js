@@ -9,7 +9,7 @@ const Faq = () => {
 
       <div className="content-container">
         <div className="terms-content">
-          <h2>Frequently Asked Questions (FAQ) – Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span> Online Gaming Application</h2>
+          <h2>Frequently Asked Questions (FAQ) – Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span> Online Gaming Application</h2>
 
           <p>Welcome to our Online Chess Gaming Platform! Below are some frequently asked questions to help you understand the game, platform rules, and policies.</p>  
 
@@ -100,7 +100,7 @@ const Faq = () => {
           <p>Yes, our chess gaming application is available for both Android and iOS users.</p> 
           <p>Q23: How can I contact customer support?</p>           
           <p>For any queries, feel free to contact us:</p>
-          <p>📧 Email: support@mychesscircle.com</p>
+          <p>📧 Email: support@mychesscircle.uk</p>
           <p>📞 Phone: 9113577605 / 8867468556</p>  
 
         </div>

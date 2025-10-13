@@ -17,7 +17,7 @@ const Product = () => {
         <div className="product-content">
           
 
-          <h2>Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span> – Online Chess Gaming Platform</h2>
+          <h2>Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span> – Online Chess Gaming Platform</h2>
           
           <h3>Compete & Win!</h3>
           <table className="tax-table">

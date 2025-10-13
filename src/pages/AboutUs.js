@@ -11,13 +11,13 @@ const Taxation = () => {
         <div className="terms-content">
 
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Saara Creative Private Limited</span> is a pioneering <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports company</span> committed to transforming the way Chess is played, experienced, and celebrated in India. With the rise of competitive digital gaming, we recognized the immense potential of chess — a timeless game of intellect, skill, and strategy — to emerge as a global <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sport.</span></p>
-          <p>Through our flagship platform, <span style={{ fontWeight: 'bold', color: 'white' }}>MyChessCircle</span>, we aim to provide an engaging and competitive digital environment where players can connect, compete, and excel. Our platform hosts <span style={{ fontWeight: 'bold', color: 'white' }}>online Chess Tournaments, one-on-one challenges, and community-driven competitions</span>, designed to offer players not only the thrill of competition but also the recognition and rewards they deserve.</p>
+          <p>Through our flagship platform, <span style={{ fontWeight: 'bold', color: 'white' }}>MyChessCircle_UK</span>, we aim to provide an engaging and competitive digital environment where players can connect, compete, and excel. Our platform hosts <span style={{ fontWeight: 'bold', color: 'white' }}>online Chess Tournaments, one-on-one challenges, and community-driven competitions</span>, designed to offer players not only the thrill of competition but also the recognition and rewards they deserve.</p>
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>As India’s dedicated Chess E-Sports entity</span>, we are driven by innovation, fairness, and transparency. Every Tournaments and competition we host is skill-based, ensuring that outcomes depend on a player’s ability, focus, and decision-making — the true essence of chess.</p>
-          <p>At <span style={{ fontStyle: 'italic' }}>MyChessCircle</span>, we believe Chess is more than just a game; it is a battle of minds, a test of patience, and a pathway to personal growth. By combining tradition with cutting-edge technology, we are building an ecosystem that empowers players, creates opportunities, and redefines Chess as a modern <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports discipline</span>.</p>
+          <p>At <span style={{ fontStyle: 'italic' }}>MyChessCircle_UK</span>, we believe Chess is more than just a game; it is a battle of minds, a test of patience, and a pathway to personal growth. By combining tradition with cutting-edge technology, we are building an ecosystem that empowers players, creates opportunities, and redefines Chess as a modern <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports discipline</span>.</p>
 
           <h3>Our Vision</h3>
           <p>Our vision is to position <span style={{ fontWeight: 'bold', color: 'white' }}>Chess as India’s leading E-Sport</span>, recognized not only as a game of skill but as a globally celebrated competitive sport. We aspire to create a platform where every chess enthusiast — from beginners to masters — can find equal opportunities to play, learn, and grow in a professional and rewarding environment.</p>
-          <p>We see <span style={{ fontStyle: 'italic' }}>MyChessCircle</span> evolving into a hub for <span style={{ fontWeight: 'bold', color: 'white' }}>national and international Chess Tournaments</span>, a place where champions are discovered, and the spirit of competitive gaming thrives. By fostering a culture of <span style={{ fontWeight: 'bold', color: 'white' }}>fair play, accessibility, and digital innovation</span>, we aim to contribute towards India’s emergence as a strong force in the global E-Sports landscape.</p>
+          <p>We see <span style={{ fontStyle: 'italic' }}>MyChessCircle_UK</span> evolving into a hub for <span style={{ fontWeight: 'bold', color: 'white' }}>national and international Chess Tournaments</span>, a place where champions are discovered, and the spirit of competitive gaming thrives. By fostering a culture of <span style={{ fontWeight: 'bold', color: 'white' }}>fair play, accessibility, and digital innovation</span>, we aim to contribute towards India’s emergence as a strong force in the global E-Sports landscape.</p>
 
           <h3>Our Mission</h3>
           <p>At Saara Creative Pvt. Ltd., our mission goes beyond building a gaming platform — we are creating a <span style={{ fontWeight: 'bold', color: 'white' }}>movement for Chess as an E-Sport</span>. We are committed to:</p>
@@ -26,7 +26,7 @@ const Taxation = () => {
             <li><span style={{ fontWeight: 'bold', color: 'white' }}>• Building a Thriving Community:</span> Bringing together Chess enthusiasts, casual players, and professional athletes to form a supportive, inclusive, and engaging E-Sports community.</li>
             <li><span style={{ fontWeight: 'bold', color: 'white' }}>• Leveraging Technology for Growth:</span> Using innovation, secure platforms, and scalable infrastructure to ensure smooth, fair, and accessible participation for players across India and beyond.</li>
             <li><span style={{ fontWeight: 'bold', color: 'white' }}>• Promoting Chess as a Career Path:</span> Creating recognition, financial opportunities, and visibility for chess players, so the game is not only played for passion but also for professional growth.</li>
-            <li><span style={{ fontWeight: 'bold', color: 'white' }}>• Positioning India Globally:</span> Establishing <span style={{ fontStyle: 'italic' }}>MyChessCircle</span> as a platform that represents India on the global stage, making the country a recognized hub for Chess E-Sports.</li>
+            <li><span style={{ fontWeight: 'bold', color: 'white' }}>• Positioning India Globally:</span> Establishing <span style={{ fontStyle: 'italic' }}>MyChessCircle_UK</span> as a platform that represents India on the global stage, making the country a recognized hub for Chess E-Sports.</li>
           </ul>
           <p>Our mission is simple yet ambitious — to make <span style={{ fontWeight: 'bold', color: 'white' }}>Chess the next big E-Sport</span> and empower every player to say, <span style={{ fontStyle: 'italic' }}>“Checkmate to win the game.”</span></p>
 
@@ -45,7 +45,7 @@ const Taxation = () => {
           <h3>Esports Recognition Statement</h3>
           <ul>
             <li>• Chess is a globally recognized Esport and mind sport.</li>
-            <li>• MyChessCircle aims to be India’s leading Chess Esports Platform.</li>
+            <li>• MyChessCircle_UK aims to be India’s leading Chess Esports Platform.</li>
             <li>• Future affiliation with Esports Federation of India (ESFI) and recognition under the National Online Gaming Commission.</li>
           </ul>
 

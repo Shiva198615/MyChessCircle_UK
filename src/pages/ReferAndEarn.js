@@ -11,7 +11,7 @@ const ReferAndEarn = () => {
         <div className="terms-content">
           
         <p>Earn Rewards by Inviting Your Friends! 🎉</p>
-        <p>At Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span>, we believe that gaming is more fun when shared with friends! That’s why we’re offering you an exciting opportunity to earn real 
+        <p>At Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span>, we believe that gaming is more fun when shared with friends! That’s why we’re offering you an exciting opportunity to earn real 
           rewards by referring your friends to our online chess gaming application. The more friends you invite, the more you earn!</p>
         <p>How It Works?</p>
         <ul>

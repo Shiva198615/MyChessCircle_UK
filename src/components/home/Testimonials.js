@@ -12,19 +12,19 @@ const Testimonials = () => {
       id: 1,
       name: "-Manish",
       image: Manish,
-      quote:"MyChessCircle has revolutionized online chess E-sports Championships. The platform is intuitive and the competition is world-class.",
+      quote:"MyChessCircle_UK has revolutionized online chess E-sports Championships. The platform is intuitive and the competition is world-class.",
     },
     {
       id: 2,
       name: "-Ankit",
       image: Ankit,
-      quote: "I love the E-sports Chess Championship structure on MyChessCircle. It's challenging and rewarding at the same time.",
+      quote: "I love the E-sports Chess Championship structure on MyChessCircle_UK. It's challenging and rewarding at the same time.",
     },
     {
       id: 3,
       name: "-Sahil",
       image: Sahil,
-      quote:"As a casual player, MyChessCircle gives me the opportunity to test my skills against players from all over the world.",
+      quote:"As a casual player, MyChessCircle_UK gives me the opportunity to test my skills against players from all over the world.",
     },
   ]
 

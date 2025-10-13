@@ -12,10 +12,10 @@ const FairPlayPolicy = () => {
 
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Effective Date:</span> 22-Aug-2025</p>
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Entity:</span> Saara Creative Private Limited</p>
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle – India's Chess E-Sports Platform</p>
+          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle_UK – India's Chess E-Sports Platform</p>
 
           <h3>1. Purpose of the Policy</h3>
-          <p>At MyChessCircle, we are committed to maintaining the <span style={{ fontWeight: 'bold', color: 'white' }}>highest standards of integrity, transparency, and fair competition</span> in all our chess tournaments. This Fair Play Policy is designed to ensure that every participant enjoys a <span style={{ fontWeight: 'bold', color: 'white' }}>level playing field</span>.</p>
+          <p>At MyChessCircle_UK, we are committed to maintaining the <span style={{ fontWeight: 'bold', color: 'white' }}>highest standards of integrity, transparency, and fair competition</span> in all our chess tournaments. This Fair Play Policy is designed to ensure that every participant enjoys a <span style={{ fontWeight: 'bold', color: 'white' }}>level playing field</span>.</p>
 
           <h3>2. Prohibited Practices</h3>
           <p>The following activities are strictly prohibited and may lead to <span style={{ fontWeight: 'bold', color: 'white' }}>suspension, disqualification, or permanent ban:</span></p>
@@ -56,12 +56,12 @@ const FairPlayPolicy = () => {
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Grievance Officer</span></p>
           <ul>
             <li>Saara Creative Private Limited</li>
-            <li>Email: support@mychesscircle.com</li>
+            <li>Email: support@mychesscircle.uk</li>
             <li>Phone: +91-9113577605 / 8867468556</li>
           </ul>
 
           <h3>7. Platform Rights</h3>
-          <p>MyChessCircle reserves the right to:</p>
+          <p>MyChessCircle_UK reserves the right to:</p>
           <ul>
             <li>• Modify this policy at any time for compliance and security reasons.</li>
             <li>• Disqualify or restrict users at its discretion where fair play is compromised.</li>

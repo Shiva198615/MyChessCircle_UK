@@ -1,11 +1,11 @@
-# MyChessCircle - Chess Gaming Platform
+# MyChessCircle_UK - Chess Gaming Platform
 
 A comprehensive chess gaming platform built with React, featuring E-sports Championships, tutorials, and secure payment processing.
 
 ## Features
 
 ### 🏆 Core Features
-- **Home Page** - Welcome to MyChessCircle
+- **Home Page** - Welcome to MyChessCircle_UK
 - **About Chess** - Learn about chess history and rules
 - **E-sports Championship** - Participate in chess competitions
 - **Tutorials** - Improve your chess skills
@@ -59,7 +59,7 @@ You can apply the following coupon codes during payment checkout:
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd MyChessCircle
+cd MyChessCircle_UK
 ```
 
 2. Install dependencies:

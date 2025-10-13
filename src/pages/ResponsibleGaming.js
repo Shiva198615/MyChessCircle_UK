@@ -32,7 +32,7 @@ const ResponsibleGaming = () => {
           </ul>
 
           <h2>Join Us & Be a Part of the Future of Online Chess</h2>
-             <p>At Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span> – India's Chess E-Sports Platform, we are more than just a gaming platform – we are a community of chess lovers, innovators, and technology enthusiasts working 
+             <p>At Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span> – India's Chess E-Sports Platform, we are more than just a gaming platform – we are a community of chess lovers, innovators, and technology enthusiasts working 
               to bring chess gaming to the next level. Whether you are a player, investor, or chess enthusiast, we welcome you to join our journey toward revolutionizing online chess gaming!</p>
              <p>Download the app today, play your best moves, and become a chess champion!</p>
 

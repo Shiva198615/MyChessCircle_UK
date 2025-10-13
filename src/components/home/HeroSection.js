@@ -37,7 +37,7 @@ const HeroSection = () => {
 
         <div className="app-download-card">
           <div className="app-download-content">
-            <h3>Download Official <span className="footer-logo-text">"MyChessCircle"</span> App</h3>
+            <h3>Download Official <span className="footer-logo-text">"MyChessCircle_UK"</span> App</h3>
             {/* <h4>LOGIN</h4> */}
 
             <div className="android-availability">

@@ -12,11 +12,11 @@ const TermsOfService = () => {
 
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Effective Date:</span> 22-Aug-2025</p>
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Entity:</span> Saara Creative Private Limited ("Company", "We", "Our", "Us")</p>
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle – India's Chess E-Sports Platform</p>
+          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle_UK – India's Chess E-Sports Platform</p>
 
           <h3>1.1 Introduction</h3>
           <ul>
-            <li>• Welcome to <span style={{ fontWeight: 'bold', color: 'white' }}>MyChessCircle</span>, an online <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports platform</span> where users can participate in <span style={{ fontWeight: 'bold', color: 'white' }}>chess tournaments</span> by paying platform fees and compete for prize rewards.</li>
+            <li>• Welcome to <span style={{ fontWeight: 'bold', color: 'white' }}>MyChessCircle_UK</span>, an online <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports platform</span> where users can participate in <span style={{ fontWeight: 'bold', color: 'white' }}>chess tournaments</span> by paying platform fees and compete for prize rewards.</li>
             <li>• By registering and using the platform, you agree to abide by these Terms of Service.</li>
           </ul>
 
@@ -51,13 +51,13 @@ const TermsOfService = () => {
 
           <h3>1.6 Compliance</h3>
           <ul>
-            <li>• MyChessCircle is an <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports platform</span> and not a gambling or betting platform.</li>
+            <li>• MyChessCircle_UK is an <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports platform</span> and not a gambling or betting platform.</li>
             <li>• All activities are based on <span style={{ fontWeight: 'bold', color: 'white' }}>skill, strategy, and fair play</span>.</li>
             <li>• The platform complies with applicable Indian laws and regulations.</li>
             <li>• <span style={{ fontWeight: 'bold', color: 'white' }}>Grievance oficer</span></li>
             <ul>
               <p>Saara Creative Private Limited</p>
-              <p>support@mychesscircle.com</p>
+              <p>support@mychesscircle.uk</p>
               <p>+91-9113577605 / 8867468556</p>
             </ul>
           </ul>

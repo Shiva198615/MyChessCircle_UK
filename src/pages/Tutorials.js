@@ -10,7 +10,7 @@ const Tutorials = () => {
       <div className="content-container">
         <div className="terms-content">
 
-          <h2>Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span> – Online Gaming Platform</h2>
+          <h2>Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span> – Online Gaming Platform</h2>
             
 
             <div>
@@ -20,7 +20,7 @@ const Tutorials = () => {
             <iframe
             className="tutorials-video"
             src="https://www.youtube.com/embed/ucKUdKA6n8I"
-            title="MyChessCircle Tutorial"
+            title="MyChessCircle_UK Tutorial"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

@@ -9,10 +9,10 @@ const RulesAndRegulations = () => {
 
       <div className="content-container">
         <div className="terms-content">
-            <h2>Rules & Regulations for Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span> – India's Chess E-Sports Platform</h2>
+            <h2>Rules & Regulations for Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span> – India's Chess E-Sports Platform</h2>
 
             <h3>1. General Rules & Gameplay</h3>
-            <p>Our MyChessCircle – India's Chess E-Sports Platform follows standard chess rules with an added points system for fair competition and an integrated timer-based system to enhance the gameplay experience.</p>
+            <p>Our MyChessCircle_UK – India's Chess E-Sports Platform follows standard chess rules with an added points system for fair competition and an integrated timer-based system to enhance the gameplay experience.</p>
 
             <p>1.1 Objective of the Game</p>
             <p>The goal of the game is to checkmate your opponent’s king. If the game is not decided by checkmate, the winner will be determined based on the points system if the timer runs out for either player.</p>

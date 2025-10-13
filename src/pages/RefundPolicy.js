@@ -11,7 +11,7 @@ const RefundPolicy = () => {
         <div className="terms-content">
           <p className="last-updated">Effective Date: 22-Aug-2025</p>
 
-          <h2>Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle”</span> – India's Chess E-Sports Platform</h2>
+          <h2>Saara Creative Pvt Ltd - Under Brand Name <span className="footer-logo-text">“MyChessCircle_UK”</span> – India's Chess E-Sports Platform</h2>
 
           <h3>1. General Tournaments Participation</h3>
             

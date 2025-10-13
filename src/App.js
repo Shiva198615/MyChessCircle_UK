@@ -62,7 +62,7 @@ const AppContent = () => {
     textAlign: 'center',
     maxWidth: '90vw'
   };
-  const BLOCK_MESSAGE = "Checkmate! This action in MyChessCircle is an illegal move.";
+  const BLOCK_MESSAGE = "Checkmate! This action in MyChessCircle_UK is an illegal move.";
   const showBlockNotice = () => {
     setBlockNoticeVisible(true);
     if (blockNoticeTimerRef.current) clearTimeout(blockNoticeTimerRef.current);

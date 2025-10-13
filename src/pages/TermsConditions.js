@@ -12,7 +12,7 @@ const TermsConditions = () => {
 
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Effective Date:</span> 22-Aug-2025</p>
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Entity:</span> Saara Creative Private Limited ("Company", "We", "Our", "Us")</p>
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle – India's Chess E-Sports Platform</p>
+          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle_UK – India's Chess E-Sports Platform</p>
 
           <h3>1. Eligibility</h3>
           <ul>
@@ -23,7 +23,7 @@ const TermsConditions = () => {
 
           <h3>2. Nature of the Game</h3>
           <ul>
-            <li>• <span style={{ fontStyle: 'italic' }}>MyChessCircle</span> hosts <span style={{ fontWeight: 'bold', color: 'white' }}>online Chess tournaments</span> which are games of skill.</li>
+            <li>• <span style={{ fontStyle: 'italic' }}>MyChessCircle_UK</span> hosts <span style={{ fontWeight: 'bold', color: 'white' }}>online Chess tournaments</span> which are games of skill.</li>
             <li>• All competitions are structured under the <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports format</span>, recognized by the Government of India.</li>
           </ul>
 
@@ -59,7 +59,7 @@ const TermsConditions = () => {
 
           <h3>7. Limitation of Liability</h3>
           <ul>
-            <li>• <span style={{ fontStyle: 'italic' }}>MyChessCircle</span> will not be liable for technical issues, third-party service outages, or disconnections.</li>
+            <li>• <span style={{ fontStyle: 'italic' }}>MyChessCircle_UK</span> will not be liable for technical issues, third-party service outages, or disconnections.</li>
             <li>• Players are responsible for maintaining a stable internet connection during matches.</li>
           </ul>
 
@@ -72,7 +72,7 @@ const TermsConditions = () => {
           <h3>Grievance Officer</h3>
           <ul>
           <p>Saara Creative Private Limited</p>
-          <p>Email: support@mychesscircle.com</p>
+          <p>Email: support@mychesscircle.uk</p>
           <p>Phone: +91-9113577605 / 8867468556</p>
           </ul>
         </div>

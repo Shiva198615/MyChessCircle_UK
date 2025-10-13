@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
 
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Effective Date:</span> 22-Aug-2025</p>
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Entity:</span> Saara Creative Private Limited ("Company", "We", "Our", "Us")</p>
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle – India's Chess E-Sports Platform</p>
+          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle_UK – India's Chess E-Sports Platform</p>
 
           <h3>1. Information We Collect</h3>
           <ul>
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
           <p><span style={{ fontWeight: 'bold', color: 'white' }}>Grievance Officer</span></p>
           <ul>
             <li>Saara Creative Private Limited</li>
-            <li>Email: support@mychesscircle.com</li>
+            <li>Email: support@mychesscircle.uk</li>
             <li>Phone: +91-9113577605 / 8867468556</li>
           </ul>
         </div>
