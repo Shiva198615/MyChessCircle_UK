@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.743f7c99.css",
+    "main.js": "/static/js/main.9f11f471.js",
+    "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
+    "static/media/background20.jpg": "/static/media/background20.5a5fe0b9d5ef439e4b0a.jpg",
+    "static/media/Image5.png": "/static/media/Image5.513796428d34b1189e98.png",
+    "static/media/Image4.png": "/static/media/Image4.136ff9ac0a5174abcf82.png",
+    "static/media/ios_image.png": "/static/media/ios_image.9dc85f2ca71876cd29bc.png",
+    "static/media/android_image.png": "/static/media/android_image.f2117cbcc1899856279a.png",
+    "static/media/Image3.png": "/static/media/Image3.1a835f01bb652a4e3cac.png",
+    "static/media/Image1.png": "/static/media/Image1.463aaa07f6e6d9883163.png",
+    "static/media/Image2.png": "/static/media/Image2.a0e3fa7cc772dd7e0cf7.png",
+    "static/media/background6.jpg": "/static/media/background6.274170504fb9c17184ca.jpg",
+    "static/media/background21.jpg": "/static/media/background21.7bead4a19ea7def04607.jpg",
+    "static/media/18-plus.png": "/static/media/18-plus.5ecd22b8af30a6aa1168.png",
+    "static/media/Manish.jpeg": "/static/media/Manish.ea6d817637062b3e7355.jpeg",
+    "static/media/History of Chess.jpg": "/static/media/History of Chess.b58ade3d76381f4b5917.jpg",
+    "static/media/BeachBarScript-Medium.ttf": "/static/media/BeachBarScript-Medium.c79a9604bb23dfb8fea8.ttf",
+    "static/media/Ankit.jpeg": "/static/media/Ankit.10c9d56b3378e75fe242.jpeg",
+    "static/media/mastercard.png": "/static/media/mastercard.fe7717f6efa5c7c8beef.png",
+    "static/media/Sahil.jpeg": "/static/media/Sahil.5f8d85633b64f988647e.jpeg",
+    "static/media/homescreen_logo.png": "/static/media/homescreen_logo.a81bfaaa28c9f440d31f.png",
+    "static/media/visa.jpg": "/static/media/visa.dc8b944bb26a8075f81c.jpg",
+    "static/media/fraud.jfif": "/static/media/fraud.088b05142e36af63e778.jfif",
+    "static/media/PayPalCard.png": "/static/media/PayPalCard.b5863cb1734fc6f1a768.png",
+    "static/media/google-play2.png": "/static/media/google-play2.7d92e04984eaf5b7165e.png",
+    "static/media/google-play.png": "/static/media/google-play.5769ae38b833ff9f6c17.png",
+    "static/media/itechlabs.jpg": "/static/media/itechlabs.3a983198034a652437dc.jpg",
+    "index.html": "/index.html",
+    "main.743f7c99.css.map": "/static/css/main.743f7c99.css.map",
+    "main.9f11f471.js.map": "/static/js/main.9f11f471.js.map",
+    "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.743f7c99.css",
+    "static/js/main.9f11f471.js"
+  ]
+}

@@ -1,0 +1,260 @@
+.payment-success {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 1% 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.success-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.success-header {
+  background: linear-gradient(135deg, #2DA77C 5%, #55D5A7 100%);
+  padding: 35px 30px 25px 30px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.success-logo {
+  height: 70px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.success-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.2;
+  padding: 5px 0;
+}
+
+.success-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.success-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  border: 1px solid #e1e8ed;
+  text-align: center;
+}
+
+.success-icon {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #e8f5e8;
+  color: #27ae60;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px auto 14px;
+  box-shadow: inset 0 0 0 2px #27ae60;
+  animation: pop-in 450ms ease-out both;
+}
+
+.checkmark {
+  width: 52px;
+  height: 52px;
+}
+
+.checkmark-check {
+  fill: none;
+  stroke: #27ae60;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: draw-check 700ms ease-out 150ms forwards;
+}
+
+@keyframes draw-check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.success-message {
+  margin: 8px 0 20px 0;
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin: 8px 0 14px;
+}
+
+.payee {
+  margin: 2px 0 12px;
+}
+
+.paid-to {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.payee-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.payee-id {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.info {
+  margin-top: 12px;
+}
+
+.info-line {
+  font-size: 14px;
+  color: #2c3e50;
+  margin: 6px 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.action-buttons.single .pay-now-btn {
+  min-width: 160px;
+}
+
+.pay-now-btn {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(25, 118, 210, 0.3);
+}
+
+.pay-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(25, 118, 210, 0.4);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .payment-success {
+    padding: 0.5% 10px;
+    background-attachment: scroll;
+  }
+  .success-content {
+    padding: 20px 15px;
+  }
+  .success-title {
+    font-size: 22px;
+  }
+  .success-logo {
+    height: 50px;
+  }
+  .amount {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-success {
+    padding: 0.3% 8px;
+    background-attachment: scroll;
+  }
+  .success-header {
+    padding: 20px 12px 15px 12px;
+  }
+  .success-title {
+    font-size: 20px;
+  }
+  .success-logo {
+    height: 45px;
+  }
+  .success-card {
+    padding: 18px 14px;
+  }
+  .amount {
+    font-size: 28px;
+  }
+  .pay-now-btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .payment-success {
+    padding: 0.2% 5px;
+    background-attachment: scroll;
+  }
+  .success-logo {
+    height: 40px;
+  }
+  .success-message {
+    font-size: 18px;
+  }
+  .amount {
+    font-size: 26px;
+  }
+} 

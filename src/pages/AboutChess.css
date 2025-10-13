@@ -1,0 +1,166 @@
+  .about-chess-page {
+    background-color: var(--background-color);
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .chess-history,
+  .chess-rules,
+  .chess-pieces,
+  .chess-strategy {
+    margin-bottom: 60px;
+  }
+  
+  .chess-history h2,
+  .chess-rules h2,
+  .chess-pieces h2,
+  .chess-strategy h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .history-content,
+  .rules-content,
+  .strategy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .history-image,
+  .rules-image,
+  .strategy-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .history-image img,
+  .rules-image img,
+  .strategy-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .history-text,
+  .rules-text,
+  .strategy-text {
+    color: var(--text-secondary);
+  }
+  
+  .history-text p,
+  .rules-text p {
+    margin-bottom: 28px;
+  }
+  
+  .rules-text h3,
+  .strategy-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .rules-text ul,
+  .strategy-text ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .rules-text li,
+  .strategy-text li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+    list-style-type: none;
+  }
+  
+  .rules-text li:before,
+  .strategy-text li:before {
+    content: "•";
+    color: #006A4E;
+    position: absolute;
+    left: 0;
+  }
+  
+  .pieces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  
+  /* Force 3 columns on desktop */
+  @media (min-width: 992px) {
+    .pieces-grid {
+      grid-template-columns: repeat(3, minmax(260px, 1fr));
+      column-gap: 36px;
+      row-gap: 28px;
+      justify-items: center;
+    }
+    .piece-card {
+      max-width: 320px;
+      width: 100%;
+    }
+  }
+  
+  .piece-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .piece-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .piece-image {
+    font-size: 2.5rem;
+    color: #006A4E;
+    margin: 0 auto 15px;
+  }
+  
+  .piece-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .piece-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  @media (max-width: 992px) {
+    .history-content,
+    .rules-content,
+    .strategy-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .history-image,
+    .strategy-image {
+      order: -1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pieces-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  } 

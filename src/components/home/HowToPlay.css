@@ -1,0 +1,111 @@
+.how-to-play-section {
+  padding: 48px 0;
+  background: var(--secondary-color, #191b22);
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.how-header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.how-sub {
+  color: var(--text-secondary, #b0b3c6);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.how-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  padding: 0 12px;
+}
+
+.how-card {
+  background: var(--card-background, #006A4E);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.08);
+  padding: 32px 12px 24px 12px;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0.2, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+  overflow: visible;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.how-card:hover {
+  box-shadow: 0 8px 32px 0 #006A4E, 0 2px 12px 0 rgba(0,0,0,0.12);
+  transform: translateY(-6px) scale(1.03);
+  z-index: 2;
+}
+
+.how-step-circle {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(125deg, #006A4E 0%, #55D5A7 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(255, 204, 51, 0.18);
+  border: 2px solid #fff2;
+  z-index: 2;
+}
+
+.how-icon-bg {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px auto;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.08);
+}
+
+.how-icon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.how-card h3 {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.how-card p {
+  color: var(--text-secondary, #b0b3c6);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .how-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .how-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-card {
+    padding: 32px 10px 24px 10px;
+  }
+}

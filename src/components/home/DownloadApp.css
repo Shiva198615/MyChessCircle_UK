@@ -1,0 +1,137 @@
+  .download-app-section {
+    padding: 50px 0;
+    background-color: var(--secondary-color);
+  }
+  
+  .download-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .download-text {
+    max-width: 500px;
+  }
+  
+  .download-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .download-text p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+  
+  .app-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    max-width: 560px;
+  }
+  
+  .feature {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  
+  .feature:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.16);
+  }
+  
+  .feature-icon {
+    font-size: 1.2rem;
+    color: #ffcc33;
+    line-height: 1;
+  }
+  
+  .feature-text {
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+  }
+  
+  .download-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .download-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .app-store-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  @media (max-width: 992px) {
+    .download-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .download-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .app-features {
+      justify-content: center;
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      max-width: 100%;
+    }
+  
+    .download-form {
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+  
+    .app-store-buttons { justify-content: center; }
+  
+    .download-actions {
+      align-items: center;
+      text-align: center;
+    }
+    .download-actions h3 {
+      margin: 0 0 6px 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .download-form {
+      flex-direction: column;
+    }
+  
+    .get-app-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }  

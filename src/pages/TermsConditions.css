@@ -1,0 +1,78 @@
+.terms-conditions-page {
+    background-color: var(--background-color);
+  }
+  
+  .content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .terms-content {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+  }
+  
+  .terms-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .terms-content h3 {
+    font-size: 1.3rem;
+    margin: 30px 0 15px;
+    color: white;
+  }
+  
+  .terms-content p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .terms-content ul,
+  .terms-content ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .terms-content li {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  .terms-content a {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+  
+  .last-updated {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+  }
+
+  .tax-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tax-table th, .tax-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .terms-content {
+      padding: 20px;
+    }
+  }  

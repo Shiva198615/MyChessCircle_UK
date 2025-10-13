@@ -1,0 +1,447 @@
+  .hero-section {
+    position: relative;
+    height: 800px;
+    background-image: url("../../assets/images/homescreen_logo.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.8));
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .hero-text {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #006A4E;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-secondary);
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  .btn-primary {
+    background-color: #006A4E;
+    color: white;
+    border: 2px solid #006A4E;
+  }
+  
+  .btn-primary:hover {
+    background-color: #55D5A7;
+    border-color: #55D5A7;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #006A4E;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #55D5A7;
+    border: 2px solid #55D5A7;
+  }
+  
+  .app-download-card {
+    background-color: rgba(30, 30, 48, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .app-download-content {
+    text-align: center;
+  }
+  
+  .app-download-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .app-download-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .android-availability {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-out, float 3s ease-in-out infinite 0.8s;
+  }
+  
+  .android-availability p {
+    color: #FFD700;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6);
+  }
+  
+  .android-download-btn {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+    animation: slideInUp 0.6s ease-out 0.3s both;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+  
+  .android-download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+  }
+  
+  .android-download-btn:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
+  }
+  
+  .android-download-btn:hover::before {
+    left: 100%;
+  }
+  
+  .android-download-btn:active {
+    transform: translateY(0) scale(0.98);
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6);
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.9;
+      text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 35px rgba(255, 215, 0, 0.8), 0 0 45px rgba(255, 215, 0, 0.6);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6);
+    }
+  }
+  
+  /* Floating animation for the entire container */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .app-download-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .country-code {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .get-app-btn {
+    background-color: #006A4E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-weight: 600;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-app-btn:hover {
+    background-color: #55D5A7;
+  }
+  
+  .app-store-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .app-store-btn img {
+    height: 40px;
+  }
+
+  .terms-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .terms-text a {
+    color: #006A4E;
+    text-decoration: none;
+  }
+  
+  .terms-text a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      padding: 80px 0;
+    }
+  
+    .hero-content {
+      gap: 30px;
+      padding: 0 15px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      padding: 14px 20px;
+      font-size: 1rem;
+    }
+  
+    .app-download-form {
+      flex-direction: column;
+    }
+  
+    .get-app-btn {
+      width: 100%;
+      padding: 12px;
+    }
+    
+    .app-download-card {
+      padding: 25px 20px;
+      margin: 0 10px;
+    }
+    
+    .app-download-content h3 {
+      font-size: 1.3rem;
+    }
+    
+    .android-availability {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    
+    .android-availability p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .android-download-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    
+    .app-store-links {
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .app-store-btn img {
+      height: 35px;
+    }
+    
+    .terms-text {
+      font-size: 0.75rem;
+      margin-top: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 60px 0;
+    }
+    
+    .hero-content {
+      gap: 25px;
+      padding: 0 10px;
+    }
+    
+    .hero-text h1 {
+      font-size: 1.8rem;
+    }
+    
+    .hero-text h2 {
+      font-size: 1.3rem;
+    }
+    
+    .hero-text p {
+      font-size: 0.9rem;
+    }
+    
+    .hero-buttons {
+      max-width: 280px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+      padding: 12px 18px;
+      font-size: 0.95rem;
+    }
+    
+    .app-download-card {
+      padding: 20px 15px;
+    }
+    
+    .app-download-content h3 {
+      font-size: 1.2rem;
+    }
+    
+    .android-availability {
+      font-size: 14px;
+    }
+    
+    .android-availability p {
+      font-size: 14px;
+    }
+    
+    .android-download-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+    
+    .app-store-btn img {
+      height: 30px;
+    }
+    
+    .terms-text {
+      font-size: 0.7rem;
+    }
+  }  

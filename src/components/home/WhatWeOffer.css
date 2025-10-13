@@ -1,0 +1,95 @@
+  .what-we-offer {
+    padding: 2rem 0;
+    background-color: black;
+  }
+  
+  .offerings-container {
+    background-color: #1a1a2e;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .what-we-offer h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .offering-card {
+    background: #1e1e30;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .offering-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .offering-icon {
+    font-size: 3.5rem;
+    color: #006A4E;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .offering-card h3 {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .offering-card ul {
+    margin: 0;
+    padding-left: 0;
+    font-size: 0.9rem;
+    list-style: none;
+    width: fit-content;
+    margin: 0 auto;
+    margin-left: 2rem;
+  }
+  
+  .offering-card li {
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+  
+  .offering-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #006A4E;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .offerings-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .offerings-grid {
+      grid-template-columns: 1fr;
+    }
+  }
