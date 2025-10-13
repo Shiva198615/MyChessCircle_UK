@@ -4,63 +4,116 @@ const TermsOfService = () => {
   return (
     <div className="terms-conditions-page">
       <div className="page-header">
-        <h1>Terms of Service (TOS)</h1>
+        <h1>Terms of Service – MyChessCircle (UK)</h1>
       </div>
 
       <div className="content-container">
         <div className="terms-content">
+          <p><strong>Effective Date:</strong> 15-Sep-2025</p>
+          <p><strong>Last Updated:</strong> 15-Sep-2025</p>
+          <p>Welcome to <strong>MyChessCircle</strong> ("we", "us", "our", or "the Platform"). By accessing or using <strong>MyChessCircle</strong>, you ("User", "Player", "you") agree to these Terms of Service. Please read them carefully.</p>
 
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Effective Date:</span> 22-Aug-2025</p>
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Entity:</span> Saara Creative Private Limited ("Company", "We", "Our", "Us")</p>
-          <p><span style={{ fontWeight: 'bold', color: 'white' }}>Platform:</span> MyChessCircle_UK – India's Chess E-Sports Platform</p>
-
-          <h3>1.1 Introduction</h3>
+          <h3>1. Eligibility</h3>
           <ul>
-            <li>• Welcome to <span style={{ fontWeight: 'bold', color: 'white' }}>MyChessCircle_UK</span>, an online <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports platform</span> where users can participate in <span style={{ fontWeight: 'bold', color: 'white' }}>chess tournaments</span> by paying platform fees and compete for prize rewards.</li>
-            <li>• By registering and using the platform, you agree to abide by these Terms of Service.</li>
+            <li>1.1 You must be <strong>18 years or older</strong> to use <strong>MyChessCircle</strong>.</li>
+            <li>1.2 By creating an account, you confirm that:
+              <ul>
+                <li>• You are legally permitted to participate in skill-based online competitions in the UK.</li>
+                <li>• You are registering for personal use and not on behalf of a third party.</li>
+                <li>• You are not barred or restricted under UK law from online participation.</li>
+              </ul>
+            </li>
           </ul>
 
-          <h3>1.2 Eligibility</h3>
+          <h3>2. Nature of Service</h3>
           <ul>
-            <li>• Only individuals <span style={{ fontWeight: 'bold', color: 'white' }}>18 years or older</span> are permitted to participate.</li>
-            <li>• Users must provide valid KYC documents for withdrawals.</li>
-            <li>• Duplicate or multiple accounts per user are not permitted.</li>
+            <li>2.1 <strong>MyChessCircle</strong> provides online chess competitions that are <strong>games of skill</strong>, not chance.</li>
+            <li>2.2 Chess outcomes depend on players’ abilities, strategies, and performance. The platform is <strong>not gambling, betting, or lottery</strong> under UK law.</li>
           </ul>
 
-          <h3>1.3 User Account</h3>
+          <h3>3. Account Registration</h3>
           <ul>
-            <li>• Each player can create only <span style={{ fontWeight: 'bold', color: 'white' }}>one account</span>.</li>
-            <li>• Users are responsible for maintaining account confidentiality.</li>
-            <li>• Misuse, cheating, or creating fake accounts will result in permanent suspension.</li>
+            <li>3.1 To participate, you must create an account with accurate details.</li>
+            <li>3.2 You are responsible for maintaining the confidentiality of your account credentials.</li>
+            <li>3.3 Multiple accounts, impersonation, or providing false details may result in suspension or termination.</li>
           </ul>
 
-          <h3>1.4 Tournaments & Fair Play</h3>
+          <h3>4. Use of the Platform</h3>
           <ul>
-            <li>• Chess tournaments will be hosted as per the <span style={{ fontWeight: 'bold', color: 'white' }}>rules specified on the platform</span>.</li>
-            <li>• Players are responsible for their own internet connection; no refunds for disconnection issues.</li>
-            <li>• Any form of cheating, hacking, or unfair play will result in disqualification and forfeiture of rewards.</li>
+            <li>4.1 You agree to use <strong>MyChessCircle</strong> lawfully and fairly.</li>
+            <li>4.2 Prohibited actions include (but are not limited to):
+              <ul>
+                <li>• Cheating, using bots, or exploiting loopholes.</li>
+                <li>• Collusion with other players.</li>
+                <li>• Interfering with the platform’s security or operations.</li>
+              </ul>
+            </li>
+            <li>4.3 Breach of rules may lead to forfeiture of winnings and account termination.</li>
           </ul>
 
-          <h3>1.5 Platform Fees & Rewards</h3>
+          <h3>5. Competitions, Entry Fees &amp; Prizes</h3>
           <ul>
-            <li>• Platform fees are collected securely through RBI-compliant payment gateways.</li>
-            <li>• Rewards are credited to the user's verified bank account after successful KYC.</li>
-            <li>• Minimum withdrawal: <span style={{ fontWeight: 'bold', color: 'white' }}>₹100</span> | Maximum withdrawal per request: <span style={{ fontWeight: 'bold', color: 'white' }}>₹10,000</span>.</li>
-            <li>• Rewards processing time: <span style={{ fontWeight: 'bold', color: 'white' }}>24-72 working hours</span>.</li>
+            <li>5.1 Entry fees, where applicable, are clearly displayed before participation.</li>
+            <li>5.2 All prize structures are published in advance of each competition.</li>
+            <li>5.3 Winnings are credited to your account balance and may be withdrawn subject to verification checks.</li>
+            <li>5.4 <strong>MyChessCircle</strong> reserves the right to withhold or cancel prizes in case of fraud, misconduct, or legal non-compliance.</li>
           </ul>
 
-          <h3>1.6 Compliance</h3>
+          <h3>6. Payments &amp; Withdrawals</h3>
           <ul>
-            <li>• MyChessCircle_UK is an <span style={{ fontWeight: 'bold', color: 'white' }}>E-Sports platform</span> and not a gambling or betting platform.</li>
-            <li>• All activities are based on <span style={{ fontWeight: 'bold', color: 'white' }}>skill, strategy, and fair play</span>.</li>
-            <li>• The platform complies with applicable Indian laws and regulations.</li>
-            <li>• <span style={{ fontWeight: 'bold', color: 'white' }}>Grievance oficer</span></li>
-            <ul>
-              <p>Saara Creative Private Limited</p>
-              <p>support@mychesscircle.uk</p>
-              <p>+91-9113577605 / 8867468556</p>
-            </ul>
+            <li>6.1 Payments are processed through authorised payment gateways in compliance with UK financial regulations.</li>
+            <li>6.2 Withdrawals may require identity verification (KYC) in line with anti-money laundering (AML) requirements.</li>
+            <li>6.3 Fees and charges (if any) will be transparently displayed before transactions.</li>
           </ul>
+
+          <h3>7. Taxes &amp; Legal Compliance</h3>
+          <ul>
+            <li>7.1 Under current UK law, <strong>individual players do not pay tax on winnings</strong>; all applicable duties (e.g., Remote Gaming Duty) are paid by the operator.</li>
+            <li>7.2 If laws or tax rules change, <strong>MyChessCircle</strong> will update its policies accordingly.</li>
+          </ul>
+
+          <h3>8. Fair Play &amp; Disputes</h3>
+          <ul>
+            <li>8.1 Players must uphold fair play and sportsmanship at all times.</li>
+            <li>8.2 Any suspected cheating, abuse, or misconduct may be investigated.</li>
+            <li>8.3 Disputes will first be addressed through internal resolution. If unresolved, they may be escalated under UK consumer law.</li>
+          </ul>
+
+          <h3>9. Intellectual Property</h3>
+          <ul>
+            <li>9.1 All software, logos, designs, and content on <strong>MyChessCircle</strong> are owned or licensed to us.</li>
+            <li>9.2 You may not copy, distribute, or exploit our intellectual property without permission.</li>
+          </ul>
+
+          <h3>10. Limitation of Liability</h3>
+          <ul>
+            <li>10.1 The Platform is provided on an <strong>“as is”</strong> and <strong>“as available”</strong> basis.</li>
+            <li>10.2 We are not liable for:
+              <ul>
+                <li>• Service interruptions or downtime.</li>
+                <li>• Losses due to device issues, internet connectivity, or user error.</li>
+                <li>• Indirect, incidental, or consequential damages.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>11. Termination</h3>
+          <ul>
+            <li>11.1 We may suspend or terminate accounts for breach of these Terms.</li>
+            <li>11.2 You may close your account at any time by contacting support.</li>
+          </ul>
+
+          <h3>12. Governing Law &amp; Jurisdiction</h3>
+          <ul>
+            <li>12.1 These Terms are governed by the laws of <strong>England and Wales</strong>.</li>
+            <li>12.2 Disputes are subject to the exclusive jurisdiction of the courts in <strong>London, UK</strong>.</li>
+          </ul>
+
+          <h3>13. Contact Us</h3>
+          <ul>
+            <li>For queries or concerns, contact:</li>
+          </ul>
+          <p>📧 support@mychesscircle.uk</p>
 
         </div>
       </div>
