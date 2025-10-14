@@ -1,8 +1,8 @@
 import React from 'react'
 import './Reviews.css'
-import Manish from "../assets/images/Manish.jpeg"
-import Ankit from "../assets/images/Ankit.jpeg"
-import Sahil from "../assets/images/Sahil.jpeg"
+// import Manish from "../assets/images/Manish.jpeg"
+// import Ankit from "../assets/images/Ankit.jpeg"
+// import Sahil from "../assets/images/Sahil.jpeg"
 
 const Reviews = () => {
   // const allTestimonials = [

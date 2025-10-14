@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import React from "react"
 import { Link, useNavigate } from "react-router-dom"
 import "./HeroSection.css"
 import googlePlay from "../../assets/images/google-play.png"
@@ -7,18 +7,18 @@ import appStore from "../../assets/images/app-store1.png"
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  const [mobileNumber, setMobileNumber] = useState("")
-  const [isEmailLogin, setIsEmailLogin] = useState(false)
-  const [email, setEmail] = useState("")
+  // const [mobileNumber, setMobileNumber] = useState("")
+  // const [isEmailLogin, setIsEmailLogin] = useState(false)
+  // const [email, setEmail] = useState("")
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (isEmailLogin) {
-      console.log("Sending app link to email:", email)
-    } else {
-      console.log("Sending app link to:", mobileNumber)
-    }
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   if (isEmailLogin) {
+  //     console.log("Sending app link to email:", email)
+  //   } else {
+  //     console.log("Sending app link to:", mobileNumber)
+  //   }
+  // }
 
   return (
     <section className="hero-section">

@@ -1,15 +1,15 @@
 import "./Downloads.css"
-import { FaAndroid, FaApple } from "react-icons/fa"
+// import { FaAndroid, FaApple } from "react-icons/fa"
 import { useNavigate } from 'react-router-dom';
-import React, { useState } from 'react';
-import PleaseWaitModal from '../components/PleaseWaitModal';
-import { fetchApkDownloadUrl } from '../api/download';
+import React from 'react';
+// import PleaseWaitModal from '../components/PleaseWaitModal';
+// import { fetchApkDownloadUrl } from '../api/download';
 import androidImage from '../assets/images/android_image.png';
 import iosImage from '../assets/images/ios_image.png';
 
 const Downloads = () => {
   const navigate = useNavigate();
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
   
   return (
     <div className="downloads-page">

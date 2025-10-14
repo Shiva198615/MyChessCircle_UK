@@ -5,17 +5,17 @@ import logo from "../../assets/images/homescreen_logo.png";
 import googlePlay from "../../assets/images/google-play.png";
 import appStore from "../../assets/images/app-store1.png";
 
-import fraud from "../../assets/images/fraud.jfif";
-import knowyourlimits from "../../assets/images/know_your_limits.png";
-import eighteenplus from "../../assets/images/18-plus.png";
-import notbot from "../../assets/images/not-bot.png";
-import secure from "../../assets/images/secure.jpg";
-import itechlabs from "../../assets/images/itechlabs.jpg";
+// import fraud from "../../assets/images/fraud.jfif";
+// import knowyourlimits from "../../assets/images/know_your_limits.png";
+// import eighteenplus from "../../assets/images/18-plus.png";
+// import notbot from "../../assets/images/not-bot.png";
+// import secure from "../../assets/images/secure.jpg";
+// import itechlabs from "../../assets/images/itechlabs.jpg";
 
-import visa from "../../assets/images/visa.jpg";
-import mastercard from "../../assets/images/mastercard.png";
-import paypal from "../../assets/images/PayPalCard.png";
-import stripe from "../../assets/images/stripe.png";
+// import visa from "../../assets/images/visa.jpg";
+// import mastercard from "../../assets/images/mastercard.png";
+// import paypal from "../../assets/images/PayPalCard.png";
+// import stripe from "../../assets/images/stripe.png";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {

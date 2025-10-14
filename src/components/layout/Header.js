@@ -1,14 +1,14 @@
 "use client"
-import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 import "./Header.css"
 import logo from "../../assets/images/homescreen_logo.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false)
-  const navigate = useNavigate() 
+  // const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false)
+  // const navigate = useNavigate() 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -18,14 +18,14 @@ const Header = () => {
     setIsDropdownOpen(!isDropdownOpen)
   }
 
-  const toggleProductDropdown = () => {
-    setIsProductDropdownOpen(!isProductDropdownOpen)
-  }
+  // const toggleProductDropdown = () => {
+  //   setIsProductDropdownOpen(!isProductDropdownOpen)
+  // }
 
   const handleLinkClick = () => {
     setIsMenuOpen(false)
     setIsDropdownOpen(false)
-    setIsProductDropdownOpen(false)
+    // setIsProductDropdownOpen(false)
   }
 
   const scrollToTop = () => {

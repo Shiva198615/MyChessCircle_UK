@@ -1,6 +1,6 @@
 import "./AboutChess.css"
 import background21 from "../assets/images/background21.jpg"
-import background6 from "../assets/images/background6.jpg"
+// import background6 from "../assets/images/background6.jpg"
 import background20 from "../assets/images/background20.jpg"
 import historyOfChess from "../assets/images/History of Chess.jpg"
 import { FaChessKing,FaChessQueen,FaChessRook,FaChessBishop,FaChessKnight,FaChessPawn } from "react-icons/fa"
