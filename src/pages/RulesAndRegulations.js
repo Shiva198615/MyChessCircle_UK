@@ -27,7 +27,7 @@ const RulesAndRegulations = () => {
               <li>1.4 <strong>Connectivity</strong> – Players are responsible for maintaining a <strong>stable internet connection</strong>. Disconnections may result in <strong>forfeiture</strong> of the match.</li>
               <li>1.5 <strong>Time Control</strong> – Each game will be played under a <strong>chess clock system</strong> (see mode-specific rules below).</li>
               <li>1.6 <strong>Conduct</strong> – Offensive chat, harassment, or abusive behaviour will lead to account suspension.</li>
-              <li>1.7 <strong>Dispute Resolution</strong> – Any disputes must be raised with <strong>support@mychesscircle.com</strong> within <strong>24 hours</strong> of match completion. Decisions by the Platform are final.</li>
+              <li>1.7 <strong>Dispute Resolution</strong> – Any disputes must be raised with <strong>support@mychesscircle.uk</strong> within <strong>24 hours</strong> of match completion. Decisions by the Platform are final.</li>
             </ul>
 
             <h3>2. One-to-One Play (Challenge Mode)</h3>

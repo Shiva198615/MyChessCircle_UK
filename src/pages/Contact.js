@@ -81,7 +81,7 @@ const Contact = () => {
                 <div className="method-icon"><FaEnvelope /></div>
                 <div className="method-details">
                   <h3>Email</h3>
-                  <p>support@mychesscircle.com</p>
+                  <p>support@mychesscircle.uk</p>
                 </div>
               </div>
 
