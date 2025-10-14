@@ -66,12 +66,18 @@ const DownloadApp = () => {
           </form>
 
           <div className="app-store-buttons">
-            <a href="#" className="app-store-btn" onClick={() => navigate('/downloads')}>
+            {/* <a href="#" className="app-store-btn" onClick={() => navigate('/downloads')}>
               <img src={googlePlay} alt="Google Play" />
             </a>
             <a href="#" className="app-store-btn" onClick={() => navigate('/downloads')}>
               <img src={appStore} alt="App Store" />
-            </a>
+            </a> */}
+            <button type="button" className="app-store-btn" onClick={() => navigate('/downloads')} aria-label="Google Play">
+              <img src={googlePlay} alt="Google Play" />
+            </button>
+            <button type="button" className="app-store-btn" onClick={() => navigate('/downloads')} aria-label="App Store">
+              <img src={appStore} alt="App Store" />
+            </button>
           </div>
         </div>
       </div>
