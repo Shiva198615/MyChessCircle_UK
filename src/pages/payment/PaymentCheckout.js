@@ -225,10 +225,10 @@ const PaymentCheckout = () => {
           const phoneRaw = urlParams.get('phone') || '';
           const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
           setFormData({
-            name: decodeURIComponent(nameRaw).replace(/\"/g, '').trim(),
-            phoneNumber: decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10),
-            orderId: decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim(),
-            amount: decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim()
+            name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+            phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+            orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+            amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
           });
           if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
             setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
@@ -245,10 +245,10 @@ const PaymentCheckout = () => {
         const phoneRaw = urlParams.get('phone') || '';
         const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
         setFormData({
-          name: decodeURIComponent(nameRaw).replace(/\"/g, '').trim(),
-          phoneNumber: decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10),
-          orderId: decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim(),
-          amount: decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim()
+          name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+          phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+          orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+          amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
         });
         if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
           setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
