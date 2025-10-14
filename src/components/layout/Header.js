@@ -82,9 +82,9 @@ const Header = () => {
             <li className="nav-item">
               <Link to="/downloads" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Downloads</Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/refer-and-earn" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Refer & Earn</Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link to="/contact" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Contact Us</Link>
             </li>
