@@ -185,99 +185,99 @@ const PaymentCheckout = () => {
     return `${mm}:${ss}`;
   };
 
-  const fetchSessionData = async (sessionId, orderId, amount) => {
-    console.log('Fetching session data for:', { sessionId, orderId, amount });
-    
-    try {
-      // Replace with your actual API endpoint
-      const response = await fetch(`${API_BASE_URL}/payment/session/${sessionId}`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+  // const fetchSessionData = async (sessionId, orderId, amount) => {
+  //   console.log('Fetching session data for:', { sessionId, orderId, amount });
+  //   
+  //   try {
+  //     // Replace with your actual API endpoint
+  //     const response = await fetch(`${API_BASE_URL}/payment/session/${sessionId}`, {
+  //       method: 'GET',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     });
 
-      console.log('API Response status:', response.status);
-      console.log('API Response ok:', response.ok);
+  //     console.log('API Response status:', response.status);
+  //     console.log('API Response ok:', response.ok);
 
-      if (response.ok) {
-        const data = await parseJsonSafe(response);
-        if (data) {
-          console.log('API Response data (parsed):', data);
-          setSessionData(data);
-          // Populate form with backend data
-          const newFormData = {
-            name: data.user?.name || '',
-            phoneNumber: data.user?.phone || '',
-            orderId: data.orderId || orderId,
-            amount: data.amount || amount
-          };
-          console.log('Setting form data:', newFormData);
-          setFormData(newFormData);
-        } else {
-          console.warn('Response body not JSON; falling back to URL parameters');
-          // Fallback to URL parameters if API fails
-          const urlParams = new URLSearchParams(location.search);
-          const orderIdRaw = urlParams.get('order_id') || '';
-          const amountRaw = urlParams.get('amount') || '';
-          const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
-          const nameRaw = urlParams.get('name') || '';
-          const phoneRaw = urlParams.get('phone') || '';
-          const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
-          setFormData({
-            name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
-            phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
-            orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
-            amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
-          });
-          if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
-            setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
-          }
-        }
-      } else {
-        console.log('API failed with status:', response.status);
-        // Fallback to URL parameters if API fails
-        const urlParams = new URLSearchParams(location.search);
-        const orderIdRaw = urlParams.get('order_id') || '';
-        const amountRaw = urlParams.get('amount') || '';
-        const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
-        const nameRaw = urlParams.get('name') || '';
-        const phoneRaw = urlParams.get('phone') || '';
-        const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
-        setFormData({
-          name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
-          phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
-          orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
-          amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
-        });
-        if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
-          setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
-        }
-      }
-    } catch (error) {
-      console.warn('Error fetching session data; using URL values if available:', error);
-      // Fallback to URL parameters if API fails (no mock data)
-      const urlParams = new URLSearchParams(location.search);
-      const orderIdRaw = urlParams.get('order_id') || '';
-      const amountRaw = urlParams.get('amount') || '';
-      const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
-      const nameRaw = urlParams.get('name') || '';
-      const phoneRaw = urlParams.get('phone') || '';
-      const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
-      setFormData({
-        name: decodeURIComponent(nameRaw).replace(/\"/g, '').trim(),
-        phoneNumber: decodeURIComponent(phoneRaw).replace(/\"/g, '').replace(/\D/g, '').slice(0, 10),
-        orderId: decodeURIComponent(orderIdRaw).replace(/\"/g, '').trim(),
-        amount: decodeURIComponent(amountRaw).replace(/\"/g, '').replace(/[^\d.]/g, '').trim()
-      });
-      if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
-        setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
-      }
-    } finally {
-      console.log('Setting loading to false');
-      setIsLoading(false);
-    }
-  };
+  //     if (response.ok) {
+  //       const data = await parseJsonSafe(response);
+  //       if (data) {
+  //         console.log('API Response data (parsed):', data);
+  //         setSessionData(data);
+  //         // Populate form with backend data
+  //         const newFormData = {
+  //           name: data.user?.name || '',
+  //           phoneNumber: data.user?.phone || '',
+  //           orderId: data.orderId || orderId,
+  //           amount: data.amount || amount
+  //         };
+  //         console.log('Setting form data:', newFormData);
+  //         setFormData(newFormData);
+  //       } else {
+  //         console.warn('Response body not JSON; falling back to URL parameters');
+  //         // Fallback to URL parameters if API fails
+  //         const urlParams = new URLSearchParams(location.search);
+  //         const orderIdRaw = urlParams.get('order_id') || '';
+  //         const amountRaw = urlParams.get('amount') || '';
+  //         const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
+  //         const nameRaw = urlParams.get('name') || '';
+  //         const phoneRaw = urlParams.get('phone') || '';
+  //         const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
+  //         setFormData({
+  //           name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+  //           phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+  //           orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+  //           amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
+  //         });
+  //         if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
+  //           setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
+  //         }
+  //       }
+  //     } else {
+  //       console.log('API failed with status:', response.status);
+  //       // Fallback to URL parameters if API fails
+  //       const urlParams = new URLSearchParams(location.search);
+  //       const orderIdRaw = urlParams.get('order_id') || '';
+  //       const amountRaw = urlParams.get('amount') || '';
+  //       const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
+  //       const nameRaw = urlParams.get('name') || '';
+  //       const phoneRaw = urlParams.get('phone') || '';
+  //       const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
+  //       setFormData({
+  //         name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+  //         phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+  //         orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+  //         amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
+  //       });
+  //       if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
+  //         setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
+  //       }
+  //     }
+  //   } catch (error) {
+  //     console.warn('Error fetching session data; using URL values if available:', error);
+  //     // Fallback to URL parameters if API fails (no mock data)
+  //     const urlParams = new URLSearchParams(location.search);
+  //     const orderIdRaw = urlParams.get('order_id') || '';
+  //     const amountRaw = urlParams.get('amount') || '';
+  //     const expiryRaw = urlParams.get('session_expiry') || urlParams.get('expiry') || urlParams.get('sessionExpire') || '';
+  //     const nameRaw = urlParams.get('name') || '';
+  //     const phoneRaw = urlParams.get('phone') || '';
+  //     const sessionExpiryFromUrl = parseInt(decodeURIComponent(expiryRaw).replace(/"/g, '').replace(/[^\d]/g, '').trim(), 10);
+  //     setFormData({
+  //       name: decodeURIComponent(nameRaw).replace(/"/g, '').trim(),
+  //       phoneNumber: decodeURIComponent(phoneRaw).replace(/"/g, '').replace(/\D/g, '').slice(0, 10),
+  //       orderId: decodeURIComponent(orderIdRaw).replace(/"/g, '').trim(),
+  //       amount: decodeURIComponent(amountRaw).replace(/"/g, '').replace(/[^\d.]/g, '').trim()
+  //     });
+  //     if (!isNaN(sessionExpiryFromUrl) && sessionExpiryFromUrl > 0) {
+  //       setSessionData({ sessionId, sessionExpiry: sessionExpiryFromUrl });
+  //     }
+  //   } finally {
+  //     console.log('Setting loading to false');
+  //     setIsLoading(false);
+  //   }
+  // };
 
   // Coupon handlers removed
   
