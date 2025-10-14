@@ -3,7 +3,7 @@ import { useState } from "react"
 import "./Tournaments.css"
 
 const Tournaments = () => {
-  const [filter, setFilter] = useState("all")
+  // const [filter, setFilter] = useState("all")
 
   const tournaments = [
     {
@@ -78,8 +78,8 @@ const Tournaments = () => {
     },
   ]
 
-  const filteredTournaments =
-    filter === "all" ? tournaments : tournaments.filter((tournament) => tournament.type === filter)
+  // const filteredTournaments =
+  //   filter === "all" ? tournaments : tournaments.filter((tournament) => tournament.type === filter)
 
   return (
     <div className="tournaments-page">

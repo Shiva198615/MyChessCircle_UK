@@ -54,22 +54,22 @@ const PaymentCheckout = () => {
   };
   
   // Safely parse JSON even when content-type is missing; return null on failure
-  const parseJsonSafe = async (response) => {
-    try {
-      const contentType = response.headers.get('content-type') || '';
-      if (contentType.includes('application/json')) {
-        return await response.json();
-      }
-      const text = await response.text();
-      try {
-        return JSON.parse(text);
-      } catch (e) {
-        return null;
-      }
-    } catch (e) {
-      return null;
-    }
-  };
+  // const parseJsonSafe = async (response) => {
+  //   try {
+  //     const contentType = response.headers.get('content-type') || '';
+  //     if (contentType.includes('application/json')) {
+  //       return await response.json();
+  //     }
+  //     const text = await response.text();
+  //     try {
+  //       return JSON.parse(text);
+  //     } catch (e) {
+  //       return null;
+  //     }
+  //   } catch (e) {
+  //     return null;
+  //   }
+  // };
 
 
   // Extract data from URL parameters and fetch session data
