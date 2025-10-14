@@ -6,8 +6,8 @@ const FeaturedTournaments = () => {
     {
       id: 1,
       title: "Grand Master Challenge",
-      prize: "₹10,00,000",
-      entryFee: "₹499",
+      prize: "£10,00,000",
+      entryFee: "£499",
       date: "June 15, 2023",
       players: 1024,
       image: "/images/tournament1.jpg",
@@ -15,8 +15,8 @@ const FeaturedTournaments = () => {
     {
       id: 2,
       title: "Blitz Championship",
-      prize: "₹5,00,000",
-      entryFee: "₹299",
+      prize: "£5,00,000",
+      entryFee: "£299",
       date: "June 20, 2023",
       players: 512,
       image: "/images/tournament2.jpg",
@@ -24,8 +24,8 @@ const FeaturedTournaments = () => {
     {
       id: 3,
       title: "Weekend Warrior",
-      prize: "₹2,00,000",
-      entryFee: "₹199",
+      prize: "£2,00,000",
+      entryFee: "£199",
       date: "Every Weekend",
       players: 256,
       image: "/images/tournament3.jpg",

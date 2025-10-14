@@ -33,30 +33,30 @@ const Product = () => {
             <tbody>
               <tr>
                 <td>Daily Chess Tournaments</td>
-                <td>₹50</td>
+                <td>£50</td>
                 <td>1024</td>
-                <td>₹5,000</td>
+                <td>£5,000</td>
                 <td><Link to="/downloads" className="label">[Join Now]</Link></td>
               </tr>
               <tr>
                 <td>Weekend Grand Tournaments</td>
-                <td>₹30</td>
+                <td>£30</td>
                 <td>2048</td>
-                <td>₹8,000</td>
+                <td>£8,000</td>
                 <td><Link to="/downloads" className="label">[Join Now]</Link></td>
               </tr>
               <tr>
                 <td>Monthly Mega Tournaments</td>
-                <td>₹50</td>
+                <td>£50</td>
                 <td>4096</td>
-                <td>₹15,000</td>
+                <td>£15,000</td>
                 <td><Link to="/downloads" className="label">[Join Now]</Link></td>
               </tr>
               <tr>
                 <td>One-to-One Chess Battle</td>
-                <td>₹10 - ₹1000</td>
+                <td>£1 - £20</td>
                 <td>2</td>
-                <td>₹18 - ₹1800</td>
+                <td>£1.50 - £30</td>
                 <td><Link to="/downloads" className="label">[Play Now]</Link></td>
               </tr>
               <tr>
@@ -72,16 +72,16 @@ const Product = () => {
           {/* 1. Daily Chess Tournament */}
           <div className="tournament-content-row">
             <div className="tournament-content">
-              <h3>1. Daily Chess Tournaments – Win up to ₹5,000 Every Day!</h3>
+              <h3>1. Daily Chess Tournaments – Win up to £5,000 Every Day!</h3>
               <b>Overview:</b>
               <p>Test your chess skills daily against a pool of competitive players in our fast-paced, skill-driven <span className="white-strong">Daily Chess Tournaments</span>. This is where consistent players come to earn, learn, and improve every single day.</p>
               <b>Game Format:</b>
               <ul>
-                <li>• Entry Fee: ₹50</li>
+                <li>• Entry Fee: £50</li>
                 <li>• Total Players: Up to 1,024</li>
                 <li>• Time Control: 10 minutes per player</li>
                 <li>• Knockout Format: Single elimination</li>
-                <li>• Prize Pool: ₹5,000 distributed among top winners</li>
+                <li>• Prize Pool: £5,000 distributed among top winners</li>
               </ul>
               <b>Features:</b>
               <ul>
@@ -115,16 +115,16 @@ const Product = () => {
               </div>
             </div>
             <div className="tournament-content">
-              <h3>2. Weekend Grand Tournaments – Win up to ₹8,000 Every Week!</h3>
+              <h3>2. Weekend Grand Tournaments – Win up to £8,000 Every Week!</h3>
               <b>Overview:</b>
               <p>Step into the arena for our high-stakes <span className="white-strong">Weekend Grand Tournaments</span>, hosted every Saturday and Sunday. This is your chance to shine against top-rated players in a grand event with wider exposure and a larger prize pool.</p>
               <b>Game Format:</b>
               <ul>
-                <li>• Entry Fee: ₹30</li>
+                <li>• Entry Fee: £30</li>
                 <li>• Total Players: 2,048 max</li>
                 <li>• Format: Multi-round knockout</li>
                 <li>• Time Control: 10 minutes per side</li>
-                <li>• Prize Pool: ₹8,000</li>
+                <li>• Prize Pool: £8,000</li>
               </ul>
               <b>Features:</b>
               <ul>
@@ -142,16 +142,16 @@ const Product = () => {
           {/* 3. Monthly Mega Tournament */}
           <div className="tournament-content-row">
             <div className="tournament-content">
-              <h3>3. Monthly Mega Tournaments – Win up to ₹15,000 Every Month!</h3>
+              <h3>3. Monthly Mega Tournaments – Win up to £15,000 Every Month!</h3>
               <b>Overview:</b>
               <p>The most prestigious event on our platform — the <span className="white-strong">Monthly Mega Tournaments</span> is the ultimate battleground for elite players. With a high entry count and generous prize pool, this event attracts serious competitors and offers real recognition.</p>
               <b>Game Format:</b>
               <ul>
-                <li>• Entry Fee: ₹50</li>
+                <li>• Entry Fee: £50</li>
                 <li>• Total Players: 4,096</li>
                 <li>• Format: Swiss + Knockout Finals</li>
                 <li>• Time Control: 10 minutes</li>
-                <li>• Prize Pool: ₹15,000</li>
+                <li>• Prize Pool: £15,000</li>
               </ul>
               <b>Features:</b>
               <ul>
@@ -190,8 +190,8 @@ const Product = () => {
               <p>Looking for quick, competitive, and rewarding games? Try our <span className="white-strong">One-to-One Chess Battle</span>. Face off against real opponents in real-time and win instant Prize Money for every win.</p>
               <b>Game Format:</b>
               <ul>
-                <li>• Entry Fee: ₹10</li>
-                <li>• Winning Reward: ₹18 (after platform fee)</li>
+                <li>• Entry Fee: £10</li>
+                <li>• Winning Reward: £15 (after platform fee)</li>
                 <li>• Time Control: 5 -15 minutes Blitz</li>
                 <li>• Format: Single match</li>
                 <li>• Available: 24/7</li>

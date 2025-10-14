@@ -33,7 +33,7 @@ A comprehensive chess gaming platform built with React, featuring E-sports Champ
 ### User Experience:
 1. **Enter 10-digit mobile number** (must be registered)
 2. **Click "Verify" button** to validate registration
-3. **Enter amount** (₹100 - ₹1,00,000)
+3. **Enter amount** (£100 - £1,00,000)
 4. **Review order summary** with transaction details
 5. **Click "Proceed to Pay"** to complete transaction
 
@@ -44,8 +44,8 @@ You can apply the following coupon codes during payment checkout:
 
 | Coupon Code | Discount         |
 |-------------|------------------|
-| CHESS10     | ₹10 off          |
-| CHESS50     | ₹50 off          |
+| CHESS10     | £10 off          |
+| CHESS50     | £50 off          |
 | TOPUP5      | 5% off amount    |
 
 ## Getting Started

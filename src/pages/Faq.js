@@ -58,7 +58,7 @@ const Faq = () => {
           <p>Q12: Is my money safe on this platform?</p>
           <p>Yes, we use encrypted payment gateways and secure transactions to protect your funds.</p>
           <p>Q13: Is there a minimum withdrawal amount?</p>
-          <p>Yes, the minimum withdrawal amount is ₹100.</p>
+          <p>Yes, the minimum withdrawal amount is £100.</p>
           <p>Q14: Why is KYC verification required?</p>
           <p>KYC is required to comply with legal regulations and ensure secure transactions.</p>
 

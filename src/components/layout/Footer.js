@@ -125,8 +125,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="allrights">&copy; {new Date().getFullYear()} Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle”</span>, All rights reserved.</p>
-          <p className="disclaimer">This platform is for entertainment purposes only. Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle”</span>, 
+          <p className="allrights">&copy; {new Date().getFullYear()} Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle_UK”</span>, All rights reserved.</p>
+          <p className="disclaimer">This platform is for entertainment purposes only. Saara Creative Pvt. Ltd. operating under the brand name  <span className="footer-logo-text">“MyChessCircle_UK”</span>, 
             operates in compliance with all applicable laws and regulations.</p>
           <div className="scroll-text">
             <p>If you reside in a state where online gaming is prohibited (e.g. ASSAM, TELANGANA, ODISHA, MEGHALAYA, NAGALAND, SIKKIM AND ANDHRA PRADESH), you are not permitted to register or 

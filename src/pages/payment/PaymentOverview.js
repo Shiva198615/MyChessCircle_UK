@@ -72,10 +72,10 @@ const PaymentOverview = () => {
                 ['Transaction ID:', overviewData.transactionId],
                 ['Reference Number:', overviewData.referenceNumber],
                 ['Phone Number:', overviewData.phoneNumber],
-                ['Amount:', `₹${Number(overviewData.amount).toFixed(2)}`],
-                ['Tax:', '₹0.00'],
-                ['Discount:', `₹${overviewData.discount.toFixed(2)}`],
-                ['Total Amount:', `₹${totalAmount.toFixed(2)}`, 'total-row total-amount']
+                ['Amount:', `£${Number(overviewData.amount).toFixed(2)}`],
+                ['Tax:', '£0.00'],
+                ['Discount:', `£${overviewData.discount.toFixed(2)}`],
+                ['Total Amount:', `£${totalAmount.toFixed(2)}`, 'total-row total-amount']
               ].map(([label, value, className]) => (
                 <div key={label} className={`summary-row ${className || ''}`}>
                   <span className="summary-label">{label}</span>

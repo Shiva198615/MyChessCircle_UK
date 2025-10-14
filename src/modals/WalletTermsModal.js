@@ -14,7 +14,7 @@ const WalletTermsModal = ({ open, onClose }) => {
 					<li>An 18% GST (Goods &amp; Services Tax) will be deducted at the time of adding money.</li>
 					<li>The net balance (after GST deduction) will be credited to the Player's Wallet.
 						<ul>
-							<li>Example: If a player adds ₹100, then ₹18 (GST) will be deducted, and ₹82 will be credited to the wallet.</li>
+							<li>Example: If a player adds £100, then £18 (GST) will be deducted, and £82 will be credited to the wallet.</li>
 						</ul>
 					</li>
 					<li>The amount once added is non-refundable, except as required by applicable law.</li>
@@ -24,8 +24,8 @@ const WalletTermsModal = ({ open, onClose }) => {
 				<ol>
 					<li>Players may withdraw available wallet balances subject to the following conditions:
 						<ul>
-							<li>Minimum withdrawal amount is ₹50.</li>
-							<li>Withdrawals below ₹50 will not be processed.</li>
+							<li>Minimum withdrawal amount is £50.</li>
+							<li>Withdrawals below £50 will not be processed.</li>
 						</ul>
 					</li>
 					<li>Taxes and charges as applicable under Indian law will be deducted before crediting the withdrawal amount.</li>
@@ -37,7 +37,7 @@ const WalletTermsModal = ({ open, onClose }) => {
 					<li>All winnings are subject to Tax Deducted at Source (TDS) as per the provisions of the Income Tax Act, 1961 and applicable gaming tax laws in India.</li>
 					<li>TDS will be deducted on net winnings before crediting to the Player's Wallet.
 						<ul>
-							<li>Currently, winnings above the threshold limit prescribed under law (₹100 or as notified by the Government) are subject to TDS at the applicable rate.</li>
+							<li>Currently, winnings above the threshold limit prescribed under law (£100 or as notified by the Government) are subject to TDS at the applicable rate.</li>
 						</ul>
 					</li>
 					<li>A TDS certificate (Form 16A) will be issued to the Player for such deductions, enabling them to claim credit while filing Income Tax returns.</li>

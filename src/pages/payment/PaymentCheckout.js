@@ -300,8 +300,8 @@ const PaymentCheckout = () => {
     amount: (value) => {
       if (!value && value !== 0) return 'Amount is required';
       const num = parseFloat(value);
-      if (isNaN(num) || num < 0) return 'Minimum amount is ₹0';
-      if (num > 100000) return 'Maximum amount is ₹1,00,000';
+      if (isNaN(num) || num < 0) return 'Minimum amount is £0';
+      if (num > 100000) return 'Maximum amount is £1,00,000';
       return null;
     }
   };
@@ -535,7 +535,7 @@ const PaymentCheckout = () => {
               </div>
               
               <div className="form-group">
-                <label htmlFor="amount">Amount (₹):</label>
+                <label htmlFor="amount">Amount (£):</label>
                 <input
                   type="number"
                   id="amount"
@@ -561,14 +561,14 @@ const PaymentCheckout = () => {
               <div className="form-group gst-row">
                 <label>GST (18%):</label>
                 <div className="gst-amount">
-                  ₹{formData.amount ? (parseFloat(formData.amount) * 0.18).toFixed(2) : '0.00'}
+                  £{formData.amount ? (parseFloat(formData.amount) * 0.18).toFixed(2) : '0.00'}
                 </div>
               </div>
               
               <div className="form-group total-row">
                 <label>Total Amount:</label>
                 <div className="total-amount">
-                  ₹{formData.amount ? (parseFloat(formData.amount) * 1.18).toFixed(2) : '0.00'}
+                  £{formData.amount ? (parseFloat(formData.amount) * 1.18).toFixed(2) : '0.00'}
                 </div>
               </div>
               

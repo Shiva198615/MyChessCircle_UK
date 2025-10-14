@@ -106,7 +106,7 @@ const PaymentSucess = () => {
             </div>
             <h2 className="success-message">Thank you! Your payment has been received.</h2>
 
-            <div className="amount">₹{Number(amountNumber).toFixed(2)}</div>
+            <div className="amount">£{Number(amountNumber).toFixed(2)}</div>
 
             <div className="payee">
               <div className="paid-to">Paid to</div>
