@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import "./Header.css"
 import logo from "../../assets/images/homescreen_logo.png"
@@ -7,6 +7,7 @@ import logo from "../../assets/images/homescreen_logo.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const dropdownRef = useRef(null)
   // const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false)
   // const navigate = useNavigate() 
 
@@ -27,6 +28,27 @@ const Header = () => {
     setIsDropdownOpen(false)
     // setIsProductDropdownOpen(false)
   }
+
+  // Close dropdown when clicking outside of it (like a modal)
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isDropdownOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false)
+      }
+    }
+    const handleEscape = (event) => {
+      if (isDropdownOpen && event.key === 'Escape') {
+        setIsDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleEscape)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleEscape)
+    }
+  }, [isDropdownOpen])
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -56,7 +78,7 @@ const Header = () => {
             <li className="nav-item">
               <Link to="/about-chess" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>About Chess</Link>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" ref={dropdownRef}>
               <button className="dropdown-btn" onClick={toggleDropdown}>
                 Terms & Compliance <i className={`arrow ${isDropdownOpen ? "up" : "down"}`}></i>
               </button>

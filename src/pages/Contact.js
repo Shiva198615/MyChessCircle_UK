@@ -163,7 +163,7 @@ const Contact = () => {
         <div className="faq-section">
           <div className="faq-header">
             <h2>Frequently Asked Questions</h2>
-            <Link to="/faq" className="view-all-link" onClick={scrollToTop} style={{ color: "#55D5A7" }}>View All</Link>
+            <Link to="/faq" className="view-all-link" onClick={scrollToTop} style={{ color: "#55D5A7", fontSize: "1rem" }}>View All</Link>
           </div>
 
           <div className="faq-list">
