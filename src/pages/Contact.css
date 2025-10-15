@@ -145,6 +145,19 @@
     outline: none;
   }
   
+  /* Reduce width for name, email, and subject inputs */
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    max-width: 265px;
+    width: 265px;
+  }
+  
+  /* Keep textarea full width */
+  .form-group textarea {
+    max-width: 100%;
+    width: 100%;
+  }
+  
   .form-group input:focus,
   .form-group textarea:focus {
     outline: none;
