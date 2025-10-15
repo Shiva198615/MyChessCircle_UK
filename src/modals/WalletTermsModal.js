@@ -29,7 +29,7 @@ const WalletTermsModal = ({ open, onClose }) => {
 						</ul>
 					</li>
 					<li>Taxes and charges as applicable under Indian law will be deducted before crediting the withdrawal amount.</li>
-					<li>Withdrawals will be processed to the verified bank account/UPI ID linked with the player's profile.</li>
+					<li>Withdrawals will be processed to the verified bank account linked with the player's profile.</li>
 				</ol>
 
 				<h4>Winnings &amp; Tax Deductions</h4>
