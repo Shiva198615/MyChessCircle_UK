@@ -91,6 +91,21 @@
     gap: 15px;
   }
   
+  .app-store-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .app-store-btn img {
+    height: 40px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+  
   @media (max-width: 992px) {
     .download-content {
       grid-template-columns: 1fr;

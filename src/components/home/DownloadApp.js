@@ -66,12 +66,6 @@ const DownloadApp = () => {
           </form>
 
           <div className="app-store-buttons">
-            {/* <a href="#" className="app-store-btn" onClick={() => navigate('/downloads')}>
-              <img src={googlePlay} alt="Google Play" />
-            </a>
-            <a href="#" className="app-store-btn" onClick={() => navigate('/downloads')}>
-              <img src={appStore} alt="App Store" />
-            </a> */}
             <button type="button" className="app-store-btn" onClick={() => navigate('/downloads')} aria-label="Google Play">
               <img src={googlePlay} alt="Google Play" />
             </button>

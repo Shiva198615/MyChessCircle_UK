@@ -86,8 +86,6 @@ const Footer = () => {
               <div className="footer-download">
                 <h4>Download Our App</h4>
                 <div className="app-buttons">
-                  {/* <a href="#" className="app-button"><img src={googlePlay} alt="Google Play" /></a> */}
-                  {/* <a href="#" className="app-button"><img src={appStore} alt="App Store" /></a> */}
                   <button type="button" className="app-button" aria-label="Google Play">
                     <img src={googlePlay} alt="Google Play" />
                   </button>
