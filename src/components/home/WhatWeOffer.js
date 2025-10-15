@@ -38,7 +38,7 @@ const WhatWeOffer = () => {
       description: [
         "Prize Money matches",
         "Instant withdrawals",
-        "Multiple payment options (UPI, Net Banking, etc.)"
+        "Multiple payment options (Credit/Debit cards and bank transfer)"
       ]
     },
     {

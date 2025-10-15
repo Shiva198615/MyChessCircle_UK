@@ -150,6 +150,7 @@
   .form-group input[type="email"] {
     max-width: 265px;
     width: 265px;
+    box-sizing: border-box;
   }
   
   /* Keep textarea full width */
@@ -256,6 +257,34 @@
   
     .faq-list {
       grid-template-columns: 1fr;
+    }
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 20px;
+    }
+
+    /* Make inputs full width on small screens */
+    .contact-form .form-group input[type="text"],
+    .contact-form .form-group input[type="email"] {
+      width: 80% !important;
+      max-width: none !important; /* override desktop cap */
+      box-sizing: border-box;
+      display: block;
+      margin-left: 50px;
+    }
+
+    .form-group textarea {
+      width: 80%;
+      box-sizing: border-box;
+      margin-left: 50px;
+    }
+
+    .submit-btn {
+      width: 80%;
+      margin-left: 50px;
     }
   }
   

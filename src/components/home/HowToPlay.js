@@ -10,7 +10,7 @@ const steps = [
   {
     icon: <FaCreditCard className="how-icon" />, step: "02",
     title: "Add Money",
-    description: "Deposit funds to your wallet using UPI, cards, or net banking. Instant and secure transactions."
+    description: "Deposit funds to your wallet using cards or bank transfer. Instant and secure transactions."
   },
   {
     icon: <FaGamepad className="how-icon" />, step: "03",

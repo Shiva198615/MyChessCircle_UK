@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import "./Contact.css"
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa"
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaMapPin } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -97,10 +97,18 @@ const Contact = () => {
                 <div className="method-icon"><FaMapMarkerAlt /></div>
                 <div className="method-details">
                   <h3>Address</h3>
-                  <p>No.50, First Floor, Jaya Arcade, Muddinapalya Main Road, Opp to Shantha Hospital, BEL Layout 1st Stage, Bedarahalli, Bengaluru Urban</p>
+                  <p>Registered Address</p>
                    <p>Pin Code : 560091</p>
                     <p>State : Karnataka</p>
                     <p>Country: India</p>
+                </div>
+              </div>
+
+              <div className="contact-method">
+                <div className="method-icon"><FaMapPin /></div>
+                <div className="method-details">
+                  <h3>Virtual Address</h3>
+                  <p>[Address]</p>
                 </div>
               </div>
             </div>
@@ -161,7 +169,7 @@ const Contact = () => {
           <div className="faq-list">
             <div className="faq-item">
               <h3>How do I withdraw my winnings?</h3>
-              <p>Withdrawals can be requested through UPI or bank transfer and KYC verification is mandatory before making a withdrawal.</p>
+              <p>Withdrawals can be requested through bank transfer and KYC verification is mandatory before making a withdrawal.</p>
             </div>
 
             <div className="faq-item">
@@ -176,7 +184,7 @@ const Contact = () => {
 
             <div className="faq-item">
               <h3>How do I deposit money into my wallet?</h3>
-              <p>You can add funds using UPI, credit/debit cards, net banking, and wallets through our secure payment gateway.</p>
+              <p>You can add funds using credit/debit cards and bank transfer through our secure payment gateway.</p>
             </div>
           </div>
         </div>

@@ -192,7 +192,7 @@ const Product = () => {
               <ul>
                 <li>• Entry Fee: £10</li>
                 <li>• Winning Reward: £15 (after platform fee)</li>
-                <li>• Time Control: 5 -15 minutes Blitz</li>
+                <li>• Time Control: 10 - 30 minutes Blitz</li>
                 <li>• Format: Single match</li>
                 <li>• Available: 24/7</li>
               </ul>
@@ -219,7 +219,7 @@ const Product = () => {
               <ul>
                 <li>• Customizable entry fee (free or paid)</li>
                 <li>• Player Limit: 2 per room</li>
-                <li>• Time Control: 5-15 minutes</li>
+                <li>• Time Control: 10 - 30 minutes</li>
                 <li>• Invite link or username-based access</li>
                 <li>• Optional prize setup (winner takes all)</li>
               </ul>

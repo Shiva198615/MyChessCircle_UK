@@ -18,15 +18,15 @@ const AboutChess = () => {
           <div className="history-content">
               <img src={historyOfChess} alt="History of Chess" />
             <div className="history-text">
-              <h3>♟️History of Chess</h3>
+              <h3>♟️ History of Chess</h3>
               <p>Chess is not just a game — it's a timeless battle of strategy, skill, and intellect with a legacy that spans over 1,500 years. What began as a war game in ancient India has evolved into a global sport, played by millions online and offline.</p>
-              <h3>🏛️Ancient Beginnings</h3>
+              <h3>🏛️ Ancient Beginnings</h3>
               <p>Chess originated in India around the 6th century CE as a game called Chaturanga, representing the four divisions of the ancient army — infantry, cavalry, elephants, and chariots. It later spread to Persia, where it became known as Shatranj. The Persian phrase "Shah Mat" (meaning "the king is helpless") is the origin of the term Checkmate. </p>
-              <h3>🌍Global Evolution</h3>
+              <h3>🌍 Global Evolution</h3>
               <p>By the 15th century, the game took a modern shape — introducing the queen's powerful moves and long-range bishops, making the game faster and more exciting.</p>
-              <h3>🏆The Era of Champions</h3>
+              <h3>🏆 The Era of Champions</h3>
               <p>The 19th century saw the rise of international competition and the first official World Chess Championship in 1886. The 20th century was dominated by various grandmasters turning chess into a professional sport.</p>
-              <h3>💻Chess Today</h3>
+              <h3>📱 Chess Today</h3>
               <p>With the rise of the internet and mobile apps, chess has transformed into a digital phenomenon. Platforms like ours bring this ancient game to your fingertips, combining tradition with technology for players of all ages.</p>
             </div>
           </div>
