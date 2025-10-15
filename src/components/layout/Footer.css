@@ -110,6 +110,8 @@
   color: var(--text-secondary);
   transition: color 0.3s ease;
   font-size: 14px;
+  white-space: nowrap; /* keep links on one line on desktop */
+  display: inline-block;
 }
 
 .footer-links-column a:hover {
