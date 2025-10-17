@@ -24,8 +24,12 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    console.log('Contact form submission started');
+    console.log('Form data being submitted:', formData);
+    
     try {
-      const response = await fetch('https://portfolio-sever.onrender.com/api/contact', {
+      const response = await fetch('https://api.mychesscircle.uk/app/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,12 +37,19 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      if (response.status === 201) {
+      console.log('API response status:', response.status);
+      console.log('API response headers:', response.headers);
+
+      if (response.ok) {
         const data = await response.json();
         console.log('Form submitted successfully:', data);
+        console.log('Success message:', data.message);
+        
         setFormSubmitted(true);
+        
         // Reset form after submission
         setTimeout(() => {
+          console.log('Resetting form after successful submission');
           setFormData({
             name: '',
             email: '',
@@ -48,11 +59,18 @@ const Contact = () => {
           setFormSubmitted(false);
         }, 4000);
       } else {
-        console.error('Failed to submit form:', response.status);
+        const errorData = await response.json().catch(() => ({}));
+        console.error('Failed to submit form - Status:', response.status);
+        console.error('Error response data:', errorData);
         alert('Failed to submit form. Please try again later.');
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Network or parsing error occurred:', error);
+      console.error('Error details:', {
+        name: error.name,
+        message: error.message,
+        stack: error.stack
+      });
       alert('An error occurred. Please try again later.');
     }
   };
