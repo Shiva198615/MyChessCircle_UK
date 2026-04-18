@@ -25,10 +25,10 @@ const Downloads = () => {
             />
           </div>
           <h2>Android App</h2>
-          <p>Coming soon to the PlayStore</p>
+          <p>Launching soon in PlayStore</p>
           <div className="download-info">
-            <span className="version">Status: In Development</span>
-            <span className="size">Expected: Q1 2026</span>
+            <span className="version">Status: Will be in production soon.</span>
+            <span className="size">Launch Update: Certifications in progress.</span>
           </div>
           <button className="download-btn secondary" disabled onClick={() => navigate('/downloads')}>Coming Soon</button>
           {/* <button
@@ -59,10 +59,10 @@ const Downloads = () => {
             />
           </div>
           <h2>iOS App</h2>
-          <p>Coming soon to the App Store</p>
+          <p>Launching soon in App Store</p>
           <div className="download-info">
-            <span className="status">Status: In Development</span>
-            <span className="release">Expected: Q1 2026</span>
+            <span className="status">Status: Will be in production soon.</span>
+            <span className="release">Launch Update: Certifications in progress.</span>
           </div>
           <button className="download-btn secondary" disabled onClick={() => navigate('/downloads')}>Coming Soon</button>
         </div>
