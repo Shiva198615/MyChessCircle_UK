@@ -1,13 +1,34 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react"
-import { Link } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import "./Header.css"
 import logo from "../../assets/images/homescreen_logo.png"
 
+const COMPLIANCE_PATHS = [
+  "/terms-conditions",
+  "/terms-of-service",
+  "/privacy-policy",
+  "/fair-play-policy",
+  "/refund-policy",
+  "/taxation",
+  "/about-us",
+  "/responsible-gaming",
+  "/legality",
+  "/rules-and-regulations",
+]
+
+const navLinkClass = ({ isActive }) =>
+  `nav-link${isActive ? " nav-link-active" : ""}`
+
+const dropdownLinkClass = ({ isActive }) =>
+  isActive ? "dropdown-link-active" : ""
+
 const Header = () => {
+  const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const dropdownRef = useRef(null)
+  const isComplianceSection = COMPLIANCE_PATHS.includes(location.pathname)
   // const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false)
   // const navigate = useNavigate() 
 
@@ -73,45 +94,45 @@ const Header = () => {
         <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Home</Link>
+              <NavLink to="/" end className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Home</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/about-chess" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>About Chess</Link>
+              <NavLink to="/about-chess" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>About Chess</NavLink>
             </li>
             <li className="nav-item dropdown" ref={dropdownRef}>
-              <button className="dropdown-btn" onClick={toggleDropdown}>
+              <button type="button" className={`dropdown-btn${isComplianceSection ? " nav-link-active" : ""}`} onClick={toggleDropdown}>
                 Terms & Compliance <i className={`arrow ${isDropdownOpen ? "up" : "down"}`}></i>
               </button>
               <div className={`dropdown-content ${isDropdownOpen ? "show" : ""}`}>
-                <Link to="/terms-conditions" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Terms & Conditions</Link>
-                <Link to="/terms-of-service" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Terms of Service</Link>
-                <Link to="/privacy-policy" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Privacy Policy</Link>
-                <Link to="/fair-play-policy" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Fair Play Policy</Link>
-                <Link to="/refund-policy" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Refund Policy</Link>
-                <Link to="/taxation" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Taxation</Link>
-                <Link to="/about-us" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>About Us</Link>
-                <Link to="/responsible-gaming" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Responsible Gaming</Link>
-                <Link to="/legality" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Legality</Link>
-                <Link to="/rules-and-regulations" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Rules & Regulations</Link>
+                <NavLink to="/terms-conditions" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Terms & Conditions</NavLink>
+                <NavLink to="/terms-of-service" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Terms of Service</NavLink>
+                <NavLink to="/privacy-policy" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Privacy Policy</NavLink>
+                <NavLink to="/fair-play-policy" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Fair Play Policy</NavLink>
+                <NavLink to="/refund-policy" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Refund Policy</NavLink>
+                <NavLink to="/taxation" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Taxation</NavLink>
+                <NavLink to="/about-us" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>About Us</NavLink>
+                <NavLink to="/responsible-gaming" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Responsible Gaming</NavLink>
+                <NavLink to="/legality" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Legality</NavLink>
+                <NavLink to="/rules-and-regulations" className={dropdownLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Rules & Regulations</NavLink>
               </div>
             </li>
             <li className="nav-item">
-              <Link to="/tournaments" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>E-sports Chess Championship</Link>
+              <NavLink to="/tournaments" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>E-sports Chess Championship</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/products" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Products</Link>
+              <NavLink to="/products" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Products</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/downloads" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Downloads</Link>
+              <NavLink to="/downloads" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Downloads</NavLink>
             </li>
             {/* <li className="nav-item">
-              <Link to="/refer-and-earn" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Refer & Earn</Link>
+              <NavLink to="/refer-and-earn" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Refer & Earn</NavLink>
             </li> */}
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Contact Us</Link>
+              <NavLink to="/contact" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Contact Us</NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/tutorials" className="nav-link" onClick={(e) => {handleLinkClick(e); scrollToTop(e)}}>Tutorials</Link>
+              <NavLink to="/tutorials" className={navLinkClass} onClick={() => { handleLinkClick(); scrollToTop(); }}>Tutorials</NavLink>
             </li>
           </ul>
         </nav>

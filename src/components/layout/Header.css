@@ -49,6 +49,20 @@
   .nav-link:hover {
     color: #55D5A7;
   }
+
+  .nav-link.nav-link-active {
+    color: #55D5A7;
+    font-weight: 600;
+  }
+
+  .dropdown-btn.nav-link-active {
+    color: #55D5A7;
+    font-weight: 600;
+  }
+
+  .dropdown-btn.nav-link-active .arrow {
+    border-color: #55D5A7;
+  }
   
   .dropdown {
     position: relative;
@@ -113,6 +127,12 @@
   .dropdown-content a:hover {
     background-color: var(--primary-color);
     color: #55D5A7;
+  }
+
+  .dropdown-content a.dropdown-link-active {
+    background-color: var(--primary-color);
+    color: #55D5A7;
+    font-weight: 600;
   }
   
   .menu-icon {
